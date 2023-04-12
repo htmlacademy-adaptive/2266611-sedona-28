@@ -1,0 +1,32 @@
+.social {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 30px 0 30px;
+
+  list-style: none;
+
+  gap: 6px;
+}
+
+.social__link {
+  display: block;
+  width: 48px;
+  height: 48px;
+
+  background-color: $color-seagull;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--vkontakte {
+    background-image: url("../img/footer-icon/vk.svg");
+  }
+
+  &--telegram {
+    background-image: url("../img/footer-icon/telegram.svg");
+  }
+
+  &--youtube {
+    background-image: url("../img/footer-icon/youtube.svg");
+  }
+}

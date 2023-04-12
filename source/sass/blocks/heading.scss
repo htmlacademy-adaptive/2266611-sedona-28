@@ -1,0 +1,29 @@
+
+.heading {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.heading__title {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+
+  font-size: 18px;
+  line-height: 26px;
+
+  &--size-xs {
+    margin-bottom: 35px;
+  }
+
+  &--size-xl {
+    font-size: 21px;
+  }
+}
+
+.heading__description {
+  max-width: 400px;
+  margin: 0 auto;
+
+  color: $color-night-rider;
+}

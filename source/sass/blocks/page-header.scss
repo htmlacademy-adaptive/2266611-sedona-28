@@ -1,0 +1,27 @@
+
+// Hamburger Menu
+//--------------------------
+
+.page-header__toggle {
+  margin: 0;
+  padding: 17px 0 17px;
+
+  background: $transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.page-header__toggle-top,
+.page-header__toggle-middle,
+.page-header__toggle-bottom {
+  display: block;
+  width: 23px;
+  height: 4px;
+  margin-bottom: 5px;
+
+  background-color: $color-seagull;
+}
+
+.page-header__toggle-bottom {
+  margin-bottom: 0;
+}

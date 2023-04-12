@@ -1,1 +1,32 @@
-// Начните писать стили здесь
+// Global
+// ------------------------
+
+@import "global/variables";
+@import "global/fonts";
+@import "global/reboot";
+@import "global/utils";
+
+
+// Blocks
+// ------------------------
+
+@import "blocks/page";
+@import "blocks/page-header";
+@import "blocks/header-nav.scss";
+@import "blocks/page-main";
+@import "blocks/heading";
+@import "blocks/button";
+@import "blocks/intro";
+@import "blocks/advantages";
+@import "blocks/hotel-search";
+@import "blocks/map";
+@import "blocks/photo-content";
+@import "blocks/photocard";
+@import "blocks/video-content";
+@import "blocks/video-controls";
+@import "blocks/feedback";
+@import "blocks/form";
+@import "blocks/group-contact";
+@import "blocks/group-control";
+@import "blocks/page-footer";
+@import "blocks/social";
