@@ -1,0 +1,131 @@
+
+.advantages {
+  text-transform: uppercase;
+}
+
+// Heading module
+//---------------------
+
+.advantages__heading {
+  padding: 32px 24px 16px;
+}
+
+// Figure module
+//---------------------
+
+.advantages__depiction {
+  margin: 0;
+
+  background-color: $color-seagull;
+}
+
+.advantages__depiction-about {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 37px 18px;
+
+  text-align: center;
+  color: $color-white;
+}
+
+.advantages__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-height: 256px;
+
+  object-fit: cover;
+}
+
+// Subtitle & Description
+//--------------------
+
+.advantages__subtitle {
+  margin: 0 0 11px;
+
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.advantages__number {
+  display: block;
+  margin-bottom: 17px;
+
+  color: $color-night-rider;
+
+  &--white {
+    color: $color-white;
+  }
+}
+
+.advantages__description {
+  margin: 0;
+
+  color: $color-night-rider;
+
+  &--white {
+    color: $color-white;
+  }
+}
+
+// Lists
+//------------------------------- services
+
+.advantages__services-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 23px 18px 21px;
+
+  list-style: none;
+}
+
+.advantages__services-item {
+  max-width: 410px;
+  margin: 0 auto;
+  padding: 8px 0 25px 47px;
+
+  &--housing {
+    background: url("../img/services-icon/icon-house.svg") no-repeat;
+  }
+
+  &--eating {
+    background: url("../img/services-icon/icon-burger.svg") no-repeat;
+  }
+
+  &--souvenirs {
+    background: url("../img/services-icon/icon-gift.svg") no-repeat;
+  }
+}
+
+.advantages__services-item .advantages__subtitle {
+  margin-bottom: 16px;
+}
+
+//------------------------------- features
+
+.advantages__features-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 24px 18px 4px;
+
+  list-style: none;
+  text-align: center;
+
+  background-color: $color-whisper;
+
+  gap: 24px;
+}
+
+.advantages__features-item {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 0 15px 24px;
+
+  border-bottom: 1px solid $color-add-light-grey;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}

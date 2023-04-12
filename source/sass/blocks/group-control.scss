@@ -1,0 +1,35 @@
+
+.group-control {
+  position: relative;
+
+  display: block;
+}
+
+.group-control__sign {
+  display: block;
+  padding: 10px 20px 10px 62px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.group-control__mark {
+  position: absolute;
+  top: 50%;
+
+  display: block;
+  width: 46px;
+  height: 46px;
+
+  background-color: $color-white-smoke;
+  transform: translateY(-50%);
+
+  &--radio {
+    border-radius: 50%;
+  }
+
+  &--checkbox {
+    border-radius: 4px;
+  }
+}

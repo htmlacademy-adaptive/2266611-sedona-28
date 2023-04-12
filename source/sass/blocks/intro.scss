@@ -1,0 +1,13 @@
+.intro {
+  padding: 90px 15px 85px;
+
+  text-align: center;
+
+  background: url("../img/intro-mobile.jpg") no-repeat bottom;
+  background-color: $color-pattens-blue;
+  background-size: cover;
+
+  &--inner {
+    padding: 52px 15px 67px;
+  }
+}
