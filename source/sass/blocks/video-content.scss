@@ -1,7 +1,23 @@
 .video-content {
   padding: 0 20px 0;
+
+  @media (min-width: $vp-768) {
+    padding: 0 60px 40px;
+  }
+
+  @media (min-width: $vp-1200) {
+    padding: 0 200px 84px;
+  }
 }
 
 .video-content__heading {
   padding: 17px 6px 38px;
+
+  @media (min-width: $vp-768) {
+    padding: 57px 6px 65px;
+  }
+
+  @media (min-width: $vp-1200) {
+    padding: 67px 6px 69px;
+  }
 }

@@ -1,14 +1,28 @@
+.page-header {
+  position: relative;
 
-// Hamburger Menu
+  min-height: 56px;
+}
+
+
+// Hamburger menu
 //--------------------------
 
 .page-header__toggle {
+  position: absolute;
+  right: 20px;
+  z-index: 10;
+
   margin: 0;
   padding: 17px 0 17px;
 
   background: $transparent;
   border: none;
   cursor: pointer;
+
+  @media (min-width: $vp-768) {
+    display: none;
+  }
 }
 
 .page-header__toggle-top,

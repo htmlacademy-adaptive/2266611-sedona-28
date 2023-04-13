@@ -1,8 +1,28 @@
 
-// Navigation
-//--------------------------
+.header-nav {
+  position: relative;
+}
+
+.header-nav__logo {
+  position: absolute;
+  left: 50%;
+  z-index: 2;
+
+  display: block;
+
+  transform: translateX(-50%);
+}
+
+.header-nav__logo-image {
+  display: block;
+}
 
 .header-nav__list {
+  position: absolute;
+  z-index: 5;
+
+  display: block;
+  width: 100%;
   margin: 0;
   padding: 0;
 
@@ -10,6 +30,12 @@
   text-align: center;
 
   background-color: $color-seagull;
+
+  @media (min-width: $vp-768) {
+    display: flex;
+
+    background-color: $transparent;
+  }
 }
 
 .header-nav__item {
@@ -17,6 +43,20 @@
 
   &:last-child {
     background: linear-gradient(to bottom, $transparent 90%, rgba($color-black, 0.2) 100%);
+  }
+
+  @media (min-width: $vp-768) {
+    flex-basis: 20%;
+
+    box-shadow: none;
+
+    &:nth-child(3) {
+      margin-left: auto;
+    }
+
+    &:last-child {
+      background: linear-gradient(to bottom, $transparent, $transparent);
+    }
   }
 }
 
@@ -29,4 +69,16 @@
   line-height: 26px;
   color: $color-white;
   text-transform: uppercase;
+
+  @media (min-width: $vp-768) {
+    padding: 18px 20px 17px;
+
+    font-size: inherit;
+    line-height: inherit;
+    color: $color-black;
+
+    &--current {
+      color: $color-roman-coffee;
+    }
+  }
 }

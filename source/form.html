@@ -28,7 +28,7 @@
               <a class="header-nav__link" href="catalog.html">Фото и видео</a>
             </li>
             <li class="header-nav__item">
-              <a class="header-nav__link" href="#" aria-current="page">Форма Отзыва</a>
+              <a class="header-nav__link header-nav__link--current" href="#" aria-current="page">Форма Отзыва</a>
             </li>
             <li class="header-nav__item">
               <a class="header-nav__link" href="https://htmlacademy.ru/" target="_blank" rel="nofollow noopener">HTML Academy</a>
@@ -41,7 +41,7 @@
         <!-- Заглавный блок -->
         <section class="intro intro--inner">
           <h2 class="visually-hidden">Добро пожаловать в Седону.</h2>
-          <img class="intro__slogan" src="img/intro-slogan-inner.svg" width="229" height="39" alt="Sedona.">
+          <img class="intro__slogan intro__slogan--inner" src="img/intro-slogan-inner.svg" width="229" height="39" alt="Sedona.">
         </section>
         <!-- Форма отзыва -->
         <section class="feedback">
@@ -53,7 +53,7 @@
             <!-- ФИО -->
             <fieldset class="form__fieldset form__fieldset--half">
               <legend class="form__legend">Представьтесь:</legend>
-              <ul class="form__list">
+              <ul class="form__list form__list--contact">
                 <li class="form__item">
                   <label class="form__contact group-contact">
                     <span class="group-contact__label">Имя*:</span>
@@ -75,9 +75,9 @@
               </ul>
             </fieldset>
             <!-- Контакты -->
-            <fieldset class="form__fieldset">
+            <fieldset class="form__fieldset form__fieldset--half">
               <legend class="form__legend">Контактная информация:</legend>
-              <ul class="form__list">
+              <ul class="form__list form__list--contact">
                 <li class="form__item">
                   <label class="form__contact group-contact">
                     <span class="group-contact__label">Контактный телефон*:</span>
@@ -95,7 +95,7 @@
             <!-- Переключатели -->
             <fieldset class="form__fieldset">
               <legend class="form__legend">Ваше общее впечатление:</legend>
-              <ul class="form__list">
+              <ul class="form__list form__list--radio">
                 <li class="form__item">
                   <label class="form__control group-control">
                     <input class="group-control__input visually-hidden" type="radio" name="experience" value="positive" checked>
@@ -122,7 +122,7 @@
             <!-- Флажки -->
             <fieldset class="form__fieldset">
               <legend class="form__legend">Посещенные достопримечательности:</legend>
-              <ul class="form__list">
+              <ul class="form__list form__list--checkbox">
                 <li class="form__item">
                   <label class="form__control group-control">
                     <input class="group-control__input visually-hidden" type="checkbox" name="attraction" value="Devil Bridge" checked>
@@ -187,7 +187,8 @@
             </a>
           </li>
         </ul>
-        <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="nofollow noopener">Разработано
+        <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="nofollow noopener">
+          <span class="page-footer__copyright-text">Разработано</span>
           <svg class="page-footer__copyright-icon" width="28" height="33" viewBox="0 0 28 33">
             <use xlink:href="#"></use>
           </svg>
