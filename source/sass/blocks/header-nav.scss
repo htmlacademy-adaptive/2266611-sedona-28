@@ -32,7 +32,10 @@
   background-color: $color-seagull;
 
   @media (min-width: $vp-768) {
+    position: static;
+
     display: flex;
+    flex-wrap: wrap;
 
     background-color: $transparent;
   }
@@ -50,7 +53,7 @@
 
     box-shadow: none;
 
-    &:nth-child(3) {
+    &:nth-child(3n) {
       margin-left: auto;
     }
 
