@@ -19,6 +19,20 @@
     color: rgb($color-black, 0.3);
   }
 
+  &--phone {
+    padding-right: 74px;
+    background-image: url("../../img/form-icon/tel-icon.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  &--email {
+    padding-right: 74px;
+    background-image: url("../../img/form-icon/email-icon.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
   &--textarea {
     display: block;
     width: 100%;
@@ -32,3 +46,4 @@
     }
   }
 }
+

@@ -131,6 +131,10 @@
 //---------------------------- likes
 
 .photocard__counter-button {
+  display: flex;
+  align-items: flex-end;
+  padding: 0;
+
   font-family: $ff-ptsans;
 
   background: $transparent;
@@ -138,8 +142,19 @@
   cursor: pointer;
 }
 
+.photocard__like-icon {
+  opacity: 0.3;
+
+  @media (min-width: $vp-1200) {
+    opacity: 1;
+
+    fill: $color-white;
+  }
+}
+
 .photocard__likes {
   display: block;
+  margin-left: 14px;
 
   font-weight: 700;
   color: $color-black;
