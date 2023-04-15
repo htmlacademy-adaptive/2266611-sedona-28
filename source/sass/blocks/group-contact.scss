@@ -20,9 +20,15 @@
   }
 
   &--textarea {
+    display: block;
     width: 100%;
     min-height: 150px;
 
     resize: none;
+
+    @media (min-width: $vp-1200) {
+      max-width: 768px;
+      margin: 0 auto;
+    }
   }
 }

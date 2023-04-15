@@ -9,12 +9,12 @@
   </head>
   <body class="page__body">
     <div class="page__wrapper">
-      <header class="page-header">
-        <button class="page-header__toggle" type="button">
+      <header class="page-header no-js">
+        <button class="page-header__toggle burger" type="button">
           <span class="visually-hidden">Открыть/закрыть меню.</span>
-          <span class="page-header__toggle-top"></span>
-          <span class="page-header__toggle-middle"></span>
-          <span class="page-header__toggle-bottom"></span>
+          <span class="burger__line burger__line--top"></span>
+          <span class="burger__line burger__line--mid"></span>
+          <span class="burger__line burger__line--low"></span>
         </button>
         <nav class="page-header__nav header-nav">
           <a class="header-nav__logo" href="#" aria-current="page">
@@ -22,7 +22,7 @@
           </a>
           <ul class="header-nav__list">
             <li class="header-nav__item">
-              <a class="header-nav__link" href="#" aria-current="page">Главная</a>
+              <a class="header-nav__link header-nav__link--current" href="#" aria-current="page">Главная</a>
             </li>
             <li class="header-nav__item">
               <a class="header-nav__link" href="catalog.html">Фото и видео</a>
@@ -51,7 +51,7 @@
           </div>
           <div class="advantages__depiction-wrap">
             <figure class="advantages__depiction">
-              <figcaption class="advantages__depiction-about">
+              <figcaption class="advantages__depiction-about advantages__depiction-about--high">
                 <h3 class="advantages__subtitle">Настоящий городок</h3>
                 <span class="advantages__number advantages__number--white">— №1 —</span>
                 <p class="advantages__description advantages__description--white">Седона не аттракцион для туристов, там течет своя жизнь</p>
@@ -62,7 +62,7 @@
           <ul class="advantages__services-list">
             <li class="advantages__services-item advantages__services-item--housing">
               <h3 class="advantages__subtitle">Жилье</h3>
-              <p class="advantages__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              <p class="advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </li>
             <li class="advantages__services-item advantages__services-item--eating">
               <h3 class="advantages__subtitle">Еда</h3>
@@ -75,7 +75,7 @@
           </ul>
           <div class="advantages__depiction-wrap">
             <figure class="advantages__depiction">
-              <figcaption class="advantages__depiction-about">
+              <figcaption class="advantages__depiction-about advantages__depiction-about--order">
                 <h3 class="advantages__subtitle">Там есть мост дьявола</h3>
                 <span class="advantages__number advantages__number--white">— №2 —</span>
                 <p class="advantages__description advantages__description--white">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
@@ -134,7 +134,8 @@
             </a>
           </li>
         </ul>
-        <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="nofollow noopener">Разработано
+        <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="nofollow noopener">
+          <span class="page-footer__copyright-text">Разработано</span>
           <svg class="page-footer__copyright-icon" width="28" height="33" viewBox="0 0 28 33">
             <use xlink:href="#"></use>
           </svg>
@@ -142,5 +143,6 @@
         </a>
       </footer>
     </div>
+    <script src="js/burger-menu.js"></script>
   </body>
 </html>

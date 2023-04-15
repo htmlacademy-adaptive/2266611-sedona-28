@@ -2,10 +2,15 @@
   padding: 39px 18px 49px;
 
   text-align: center;
-}
 
-// Button-link
-//------------------
+  @media (min-width: $vp-768) {
+    padding: 60px 60px 55px;
+  }
+
+  @media (min-width: $vp-1200) {
+    padding: 61px 120px 66px;
+  }
+}
 
 .hotel-search__button {
   max-width: 458px;

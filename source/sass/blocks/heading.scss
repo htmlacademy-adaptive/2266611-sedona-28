@@ -12,12 +12,20 @@
   font-size: 18px;
   line-height: 26px;
 
-  &--size-xs {
-    margin-bottom: 35px;
+  @media (min-width: $vp-768) {
+    font-size: 30px;
+
+    &--size-xs {
+      font-size: 21px;
+    }
   }
 
   &--size-xl {
     font-size: 21px;
+
+    @media (min-width: $vp-768) {
+      font-size: 30px;
+    }
   }
 }
 
