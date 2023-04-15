@@ -21,6 +21,7 @@
 
   &--phone {
     padding-right: 74px;
+
     background-image: url("../../img/form-icon/tel-icon.svg");
     background-repeat: no-repeat;
     background-position: right;
@@ -28,6 +29,7 @@
 
   &--email {
     padding-right: 74px;
+
     background-image: url("../../img/form-icon/email-icon.svg");
     background-repeat: no-repeat;
     background-position: right;
@@ -46,4 +48,3 @@
     }
   }
 }
-
