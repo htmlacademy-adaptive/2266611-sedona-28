@@ -29,18 +29,21 @@
     width: 50%;
     padding: 0;
 
+    background-color: $color-white-smoke;
     border: none;
 
     &--full {
       width: 100%;
-
-      border: none;
     }
   }
 
   @media (min-width: $vp-1200) {
     &:not(:first-child) {
       width: calc(100% / 3);
+    }
+
+    &--full .photocard__box {
+      padding-top: 320px;
     }
   }
 }
@@ -52,10 +55,26 @@
   position: relative;
 
   margin: 0;
+
+  @media (min-width: $vp-1200) {
+    display: flex;
+    height: 100%;
+    padding-top: 187px;
+  }
 }
 
 .photocard__link {
   display: block;
+
+  @media (min-width: $vp-1200) {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
 }
 
 .photocard__image {
@@ -66,12 +85,8 @@
 
   object-fit: cover;
 
-  @media (min-width: $vp-768) {
-    max-height: 267px;
-
-    &--large {
-      max-height: 400px;
-    }
+  @media (min-width: $vp-1200) {
+    max-height: 100%;
   }
 }
 
@@ -85,13 +100,11 @@
     justify-content: space-between;
     align-items: center;
     padding: 22px 20px 15px;
-
-    background-color: $color-white-smoke;
   }
 
   @media (min-width: $vp-1200) {
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    z-index: 1;
 
     width: 100%;
     padding: 17px 25px;
@@ -119,6 +132,7 @@
 }
 
 .photocard__description {
+  max-width: 170px;
   margin: 0;
 
   color: $color-night-rider;
