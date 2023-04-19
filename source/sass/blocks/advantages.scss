@@ -19,6 +19,10 @@
 
   @media (min-width: $vp-768) {
     padding: 47px 60px 56px;
+
+    & .heading__title {
+      font-size: 21px;
+    }
   }
 
   @media (min-width: $vp-1200) {

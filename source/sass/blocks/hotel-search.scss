@@ -12,6 +12,14 @@
   }
 }
 
+.hotel-search__heading {
+  @media (max-width: ($vp-768 - 1px)) {
+    & .heading__title {
+      font-size: 21px;
+    }
+  }
+}
+
 .hotel-search__button {
   max-width: 458px;
   margin: 0 auto;

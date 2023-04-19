@@ -14,18 +14,6 @@
 
   @media (min-width: $vp-768) {
     font-size: 30px;
-
-    &--size-xs {
-      font-size: 21px;
-    }
-  }
-
-  &--size-xl {
-    font-size: 21px;
-
-    @media (min-width: $vp-768) {
-      font-size: 30px;
-    }
   }
 }
 
