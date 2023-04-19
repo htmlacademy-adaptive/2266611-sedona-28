@@ -3,9 +3,31 @@
 
   padding: 90px 18px 85px;
 
-  background: url("../img/intro/intro-mobile.jpg") no-repeat bottom;
   background-color: $color-pattens-blue;
+  background-image: url("../img/intro/intro-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
   background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/intro/intro-mobile@2x.jpg");
+  }
+
+  @media (min-width: $vp-768) {
+    background-image: url("../img/intro/intro-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro/intro-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $vp-1200) {
+    background-image: url("../img/intro/intro-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro/intro-desktop@2x.jpg");
+    }
+  }
 
   &::after {
     content: "";
@@ -19,6 +41,9 @@
 
     background: url("../img/intro/intro-devider.svg") no-repeat center;
   }
+
+  // Padding
+  //-------------------------
 
   @media (min-width: $vp-768) {
     padding: 77px 60px 91px;
