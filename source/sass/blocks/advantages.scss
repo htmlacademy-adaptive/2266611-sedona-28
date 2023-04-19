@@ -49,7 +49,11 @@
   @media (min-width: $vp-768) {
     display: grid;
 
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 2fr;
+
+    &--columns {
+      grid-template-columns: 2fr 1fr;
+    }
 
     &--devider {
       clip-path: none;
@@ -58,6 +62,9 @@
 }
 
 .advantages__depiction-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 37px 18px;
 
   text-align: center;
@@ -85,9 +92,7 @@
   object-fit: cover;
 
   @media (min-width: $vp-768) {
-    max-height: 256px;
-
-    grid-column: 2 span;
+    max-height: 100%;
   }
 }
 
