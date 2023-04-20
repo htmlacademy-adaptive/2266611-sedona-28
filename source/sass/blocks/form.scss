@@ -177,9 +177,10 @@
       margin: 0 44px 0;
       padding: 31px 0 39px;
 
-      column-gap: 64px;
+      column-gap: 44px;
 
-      grid-template-columns: repeat(4, max-content);
+      grid-template-columns: repeat(4, 184px);
+      justify-items: center;
     }
   }
 }

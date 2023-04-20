@@ -93,12 +93,11 @@
   display: block;
   width: 100%;
   height: 100%;
-  max-height: 260px;
 
   object-fit: cover;
 
-  @media (min-width: $vp-768) {
-    max-height: 100%;
+  @media (max-width: ($vp-768 - 1px)) {
+    max-height: 260px;
   }
 }
 
@@ -166,7 +165,9 @@
 }
 
 .advantages__services-item {
-  max-width: 410px;
+  position: relative;
+
+  max-width: 400px;
   margin: 0 auto;
   padding: 8px 0 25px 47px;
 
@@ -178,36 +179,83 @@
     }
   }
 
-  &--housing {
-    background: url("../img/services-icon/icon-house.svg") no-repeat;
+  &--housing::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 40px;
+    height: 40px;
+
+    background-image: url("../img/services-icon/icon-house.svg");
+    background-repeat: no-repeat;
   }
 
-  &--eating {
-    background: url("../img/services-icon/icon-burger.svg") no-repeat;
+  &--eating::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 40px;
+    height: 40px;
+
+    background-image: url("../img/services-icon/icon-burger.svg");
+    background-repeat: no-repeat;
   }
 
-  &--souvenirs {
-    background: url("../img/services-icon/icon-gift.svg") no-repeat;
+  &--souvenirs::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 40px;
+    height: 40px;
+
+    background-image: url("../img/services-icon/icon-gift.svg");
+    background-repeat: no-repeat;
   }
 
   @media (min-width: $vp-768) {
     width: calc(100% / 3);
     padding: 156px 33px 61px;
 
-    &--housing {
-      background-position: center 57px;
+    &--housing::before {
+      top: 56px;
+      left: 50%;
+
+      width: 80px;
+      height: 77px;
+
       background-size: 80px 77px;
+      transform: translateX(-50%);
     }
 
-    &--eating {
-      background-position: center 56px;
+    &--eating::before {
+      top: 56px;
+      left: 50%;
+
+      width: 80px;
+      height: 78px;
+
       background-size: 80px 78px;
+      transform: translateX(-50%);
+    }
+
+    &--souvenirs::before {
+      top: 56px;
+      left: 50%;
+
+      width: 81px;
+      height: 89px;
+
+      background-size: 81px 89px;
+      transform: translateX(-50%);
     }
 
     &--souvenirs {
-      background-position: center 56px;
-      background-size: 81px 89px;
-
       br {
         display: none;
       }
@@ -217,20 +265,34 @@
   @media (min-width: $vp-1200) {
     padding: 169px 50px 69px;
 
-    &--housing {
-      background-position: center 66px;
+    &--housing::before {
+      top: 66px;
+
+      width: 77px;
+      height: 77px;
+
       background-size: 77px 77px;
     }
 
-    &--eating {
-      background-position: center 65px;
+    &--eating::before {
+      top: 65px;
+
+      width: 78px;
+      height: 78px;
+
       background-size: 78px 78px;
     }
 
-    &--souvenirs {
-      background-position: center 66px;
-      background-size: 82px 82px;
+    &--souvenirs::before {
+      top: 66px;
 
+      width: 82px;
+      height: 82px;
+
+      background-size: 82px 82px;
+    }
+
+    &--souvenirs {
       .advantages__description {
         max-width: 225px;
       }
@@ -268,17 +330,17 @@
 .advantages__features-item {
   padding: 24px 15px 24px;
 
-  border-bottom: 1px solid $color-add-light-grey;
+  @media (max-width: ($vp-768 - 1px)) {
+    border-bottom: 1px solid $color-add-light-grey;
 
-  &:last-child {
-    border-bottom: none;
+    &:last-child {
+      border-bottom: none;
+    }
   }
 
   @media (min-width: $vp-768) {
     width: calc(100% / 3);
     padding: 41px 33px 41px;
-
-    border-bottom: none;
   }
 
   @media (min-width: $vp-768) and (max-width: ($vp-1200 - 1px)) {
