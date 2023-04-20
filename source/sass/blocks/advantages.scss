@@ -80,6 +80,12 @@
 
   @media (min-width: $vp-1200) {
     padding: 52px 50px 51px;
+
+    &--order {
+      .advantages__description {
+        max-width: 250px;
+      }
+    }
   }
 }
 
@@ -201,6 +207,10 @@
     &--souvenirs {
       background-position: center 56px;
       background-size: 81px 89px;
+
+      br {
+        display: none;
+      }
     }
   }
 
@@ -208,18 +218,22 @@
     padding: 169px 50px 69px;
 
     &--housing {
-      background-position: center 69px;
-      background-size: 79px 75px;
+      background-position: center 66px;
+      background-size: 77px 77px;
     }
 
     &--eating {
-      background-position: center 72px;
-      background-size: 76px 73px;
+      background-position: center 65px;
+      background-size: 78px 78px;
     }
 
     &--souvenirs {
-      background-position: center 69px;
-      background-size: 77px 75px;
+      background-position: center 66px;
+      background-size: 82px 82px;
+
+      .advantages__description {
+        max-width: 225px;
+      }
     }
   }
 }
