@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
@@ -41,13 +43,13 @@
         <!-- Заглавный блок -->
         <section class="intro intro--inner">
           <h2 class="visually-hidden">Добро пожаловать в Седону.</h2>
-          <img class="intro__slogan intro__slogan--inner" src="img/intro-slogan-inner.svg" width="229" height="39" alt="Sedona.">
+          <img class="intro__slogan intro__slogan--inner" src="img/intro/intro-slogan-inner.svg" width="229" height="39" alt="Sedona.">
         </section>
         <!-- Форма отзыва -->
         <section class="feedback">
           <div class="feedback__heading heading">
             <h2 class="heading__title">Оставьте свой отзыв</h2>
-            <p class="heading__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+            <p class="heading__description">Помогите нашим отелям стать лучше! Оставьте отзыв о&nbsp;них, а&nbsp;также о посещенных вами достопримечательностях</p>
           </div>
           <form class="feedback__form form" action="https://echo.htmlacademy.ru/courses" method="post">
             <!-- ФИО -->
@@ -189,12 +191,19 @@
         </ul>
         <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="nofollow noopener">
           <span class="page-footer__copyright-text">Разработано</span>
-          <svg class="page-footer__copyright-icon" width="28" height="33" viewBox="0 0 28 33">
-            <use xlink:href="#"></use>
+          <svg class="page-footer__copyright-icon" width="28" height="33">
+            <use href="img/sprite.svg#htmlacademy"></use>
           </svg>
           <span class="visually-hidden">HTML Academy.</span>
         </a>
       </footer>
+      <div class="modal">
+        <div class="modal__wrapper modal__wrapper--error">
+          <h2 class="modal__title">Что-то пошло не так!</h2>
+          <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <button class="modal__button button" type="button">Oк</button>
+        </div>
+      </div>
     </div>
     <script src="js/burger-menu.js"></script>
   </body>

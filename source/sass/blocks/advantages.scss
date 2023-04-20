@@ -3,14 +3,28 @@
   text-transform: uppercase;
 }
 
-// Heading module
+// Heading
 //---------------------
 
 .advantages__heading {
-  padding: 32px 24px 16px;
+  padding: 34px 25px 37px;
+
+  & .heading__title {
+    margin-bottom: 36px;
+  }
+
+  & .heading__description {
+    max-width: 500px;
+  }
 
   @media (min-width: $vp-768) {
     padding: 47px 60px 56px;
+
+    & .heading__title {
+      margin-bottom: 30px;
+
+      font-size: 21px;
+    }
   }
 
   @media (min-width: $vp-1200) {
@@ -18,11 +32,7 @@
   }
 }
 
-.advantages__heading h2 {
-  margin-bottom: 35px;
-}
-
-// Figure module
+// Figure
 //---------------------
 
 .advantages__depiction {
@@ -30,22 +40,35 @@
 
   background-color: $color-seagull;
 
+  @media (max-width: ($vp-768 - 1px)) {
+    &--devider {
+      clip-path: polygon(50% 3%, 100% 0, 100% 100%, 0 100%, 0 0);
+
+      .advantages__depiction-about {
+        padding: 49px 18px 40px;
+      }
+    }
+  }
+
   @media (min-width: $vp-768) {
     display: grid;
 
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 2fr;
+
+    &--columns {
+      grid-template-columns: 2fr 1fr;
+    }
   }
 }
 
 .advantages__depiction-about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 37px 18px;
 
   text-align: center;
   color: $color-white;
-
-  &--high {
-    padding: 54px 18px 40px;
-  }
 
   @media (min-width: $vp-768) {
     padding: 52px 33px 32px;
@@ -69,9 +92,7 @@
   object-fit: cover;
 
   @media (min-width: $vp-768) {
-    max-height: 256px;
-
-    grid-column: 2 span;
+    max-height: 100%;
   }
 }
 
@@ -79,7 +100,6 @@
 //--------------------
 
 .advantages__subtitle {
-  max-width: 360px;
   margin: 0 auto;
   margin-bottom: 11px;
 
@@ -87,7 +107,8 @@
   line-height: 26px;
 
   @media (min-width: $vp-768) {
-    max-width: 155px;
+    max-width: 159px;
+    margin-bottom: 14px;
 
     font-size: 21px;
   }
@@ -95,44 +116,39 @@
 
 .advantages__number {
   display: block;
-  max-width: 360px;
+  max-width: 190px;
   margin: 0 auto;
   margin-bottom: 17px;
 
-  color: $color-night-rider;
-
-  &--white {
-    color: $color-white;
+  @media (min-width: $vp-768) {
+    margin-bottom: 23px;
   }
 }
 
 .advantages__description {
-  max-width: 360px;
   margin: 0 auto;
-
-  color: $color-night-rider;
-
-  &--white {
-    color: $color-white;
-  }
 
   @media (min-width: $vp-768) {
     max-width: 190px;
   }
 
   @media (min-width: $vp-1200) {
-    max-width: 290px;
+    max-width: 286px;
   }
 }
 
-// Lists
-//------------------------------- services
+// Services list
+//-----------------------------
 
 .advantages__services-list {
   margin: 0;
   padding: 23px 18px 21px;
 
   list-style: none;
+
+  & .advantages__description {
+    color: $color-night-rider;
+  }
 
   @media (min-width: $vp-768) {
     display: flex;
@@ -147,6 +163,14 @@
   max-width: 410px;
   margin: 0 auto;
   padding: 8px 0 25px 47px;
+
+  & .advantages__subtitle {
+    margin-bottom: 16px;
+
+    @media (min-width: $vp-768) {
+      margin-bottom: 23px;
+    }
+  }
 
   &--housing {
     background: url("../img/services-icon/icon-house.svg") no-repeat;
@@ -165,27 +189,43 @@
     padding: 156px 33px 61px;
 
     &--housing {
-      background-position: center 60px;
-      background-size: 77px 72px;
+      background-position: center 57px;
+      background-size: 80px 77px;
     }
 
     &--eating {
-      background-position: center 62px;
-      background-size: 80px 68px;
+      background-position: center 56px;
+      background-size: 80px 78px;
     }
 
     &--souvenirs {
-      background-position: center 64px;
-      background-size: 66px 75px;
+      background-position: center 56px;
+      background-size: 81px 89px;
+    }
+  }
+
+  @media (min-width: $vp-1200) {
+    padding: 169px 50px 69px;
+
+    &--housing {
+      background-position: center 69px;
+      background-size: 79px 75px;
+    }
+
+    &--eating {
+      background-position: center 72px;
+      background-size: 76px 73px;
+    }
+
+    &--souvenirs {
+      background-position: center 69px;
+      background-size: 77px 75px;
     }
   }
 }
 
-.advantages__services-item .advantages__subtitle {
-  margin-bottom: 16px;
-}
-
-//------------------------------- features
+// Features list
+//-------------------------------
 
 .advantages__features-list {
   margin: 0;
@@ -195,6 +235,14 @@
   text-align: center;
 
   background-color: $color-whisper;
+
+  & .advantages__number {
+    color: $color-night-rider;
+  }
+
+  & .advantages__description {
+    color: $color-night-rider;
+  }
 
   @media (min-width: $vp-768) {
     display: flex;
@@ -217,6 +265,12 @@
     padding: 41px 33px 41px;
 
     border-bottom: none;
+  }
+
+  @media (min-width: $vp-768) and (max-width: ($vp-1200 - 1px)) {
+    &:nth-child(2) .advantages__description {
+      max-width: 163px;
+    }
   }
 
   @media (min-width: $vp-1200) {

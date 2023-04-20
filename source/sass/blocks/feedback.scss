@@ -5,6 +5,12 @@
     padding: 64px 60px 44px;
   }
 
+  @media (min-width: $vp-768) and (max-width: ($vp-1200 - 1px)) {
+    & .heading__title {
+      margin-bottom: 21px;
+    }
+  }
+
   @media (min-width: $vp-1200) {
     padding: 115px 120px 4px;
   }

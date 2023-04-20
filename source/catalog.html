@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
@@ -41,7 +43,7 @@
         <!-- Заглавный блок -->
         <section class="intro intro--inner">
           <h2 class="visually-hidden">Добро пожаловать в Седону.</h2>
-          <img class="intro__slogan intro__slogan--inner" src="img/intro-slogan-inner.svg" width="229" height="39" alt="Sedona.">
+          <img class="intro__slogan intro__slogan--inner" src="img/intro/intro-slogan-inner.svg" width="229" height="39" alt="Sedona.">
         </section>
         <!-- Фото -->
         <section class="photo-content">
@@ -53,7 +55,11 @@
             <li class="photocard__item photocard__item--full">
               <figure class="photocard__box">
                 <a class="photocard__link" href="#">
-                  <img class="photocard__image photocard__image--large" src="img/photocard/sunset-mobile.jpg" width="280" height="280" alt="Пейзаж с закатом солнца.">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photocard/sunset-desktop.jpg 1x, img/photocard/sunset-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photocard/sunset-tablet.jpg 1x, img/photocard/sunset-tablet@2x.jpg 2x">
+                    <img class="photocard__image" src="img/photocard/sunset-mobile.jpg" srcset="img/photocard/sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Пейзаж с закатом солнца.">
+                  </picture>
                 </a>
                 <figcaption class="photocard__name">
                   <div class="photocard__wrapper">
@@ -70,7 +76,11 @@
             <li class="photocard__item">
               <figure class="photocard__box">
                 <a class="photocard__link" href="#">
-                  <img class="photocard__image" src="img/photocard/cactus-mobile.jpg" width="280" height="280" alt="Местный кактус.">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photocard/cactus-desktop.jpg 1x, img/photocard/cactus-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photocard/cactus-tablet.jpg 1x, img/photocard/cactus-tablet@2x.jpg 2x">
+                    <img class="photocard__image" src="img/photocard/cactus-mobile.jpg" srcset="img/photocard/cactus-mobile@2x.jpg 2x" width="280" height="280" alt="Местный кактус.">
+                  </picture>
                 </a>
                 <figcaption class="photocard__name">
                   <div class="photocard__wrapper">
@@ -87,7 +97,11 @@
             <li class="photocard__item">
               <figure class="photocard__box">
                 <a class="photocard__link" href="#">
-                  <img class="photocard__image" src="img/photocard/serpentine-mobile.jpg" width="280" height="280" alt="Дорога-серпантин в Седону.">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photocard/serpentine-desktop.jpg 1x, img/photocard/serpentine-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photocard/serpentine-tablet.jpg 1x, img/photocard/serpentine-tablet@2x.jpg 2x">
+                    <img class="photocard__image" src="img/photocard/serpentine-mobile.jpg" srcset="img/photocard/serpentine-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога-серпантин в Седону.">
+                  </picture>
                 </a>
                 <figcaption class="photocard__name">
                   <div class="photocard__wrapper">
@@ -104,7 +118,11 @@
             <li class="photocard__item">
               <figure class="photocard__box">
                 <a class="photocard__link" href="#">
-                  <img class="photocard__image" src="img/photocard/rock-mobile.jpg" width="280" height="280" alt="Красные скалы Седоны.">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photocard/rock-desktop.jpg 1x, img/photocard/rock-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photocard/rock-tablet.jpg 1x, img/photocard/rock-tablet@2x.jpg 2x">
+                    <img class="photocard__image" src="img/photocard/rock-mobile.jpg" srcset="img/photocard/rock-mobile@2x.jpg 2x" width="280" height="280" alt="Красные скалы Седоны.">
+                  </picture>
                 </a>
                 <figcaption class="photocard__name">
                   <div class="photocard__wrapper">
@@ -127,7 +145,11 @@
             <p class="heading__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           </div>
           <div class="video-content__wrapper video-controls">
-            <img class="video-controls__clip" src="img/video/video-mobile.jpg" alt="Мост дьявола.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/video/video-desktop.jpg 1x, img/video/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video/video-tablet.jpg 1x, img/video/video-tablet@2x.jpg 2x">
+              <img class="video-controls__clip" src="img/video/video-mobile.jpg" srcset="img/video/video-mobile@2x.jpg 2x" width="280" height="177" alt="Мост дьявола.">
+            </picture>
             <a class="video-controls__button" href="#">
               <span class="visually-hidden">Воспроизвести видео.</span>
             </a>
@@ -155,8 +177,8 @@
         </ul>
         <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="nofollow noopener">
           <span class="page-footer__copyright-text">Разработано</span>
-          <svg class="page-footer__copyright-icon" width="28" height="33" viewBox="0 0 28 33">
-            <use xlink:href="#"></use>
+          <svg class="page-footer__copyright-icon" width="28" height="33">
+            <use href="img/sprite.svg#htmlacademy"></use>
           </svg>
           <span class="visually-hidden">HTML Academy.</span>
         </a>

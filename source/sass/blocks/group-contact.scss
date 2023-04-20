@@ -1,4 +1,6 @@
 .group-contact__label {
+  margin-left: 16px;
+
   color: $color-night-rider;
   text-transform: uppercase;
 }
@@ -19,12 +21,32 @@
     color: rgb($color-black, 0.3);
   }
 
+  &--phone {
+    padding-right: 60px;
+
+    background-image: url("../img/form-icon/tel-icon.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  &--email {
+    padding-right: 60px;
+
+    background-image: url("../img/form-icon/email-icon.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
   &--textarea {
     display: block;
     width: 100%;
     min-height: 150px;
 
     resize: none;
+
+    @media (min-width: $vp-768) {
+      min-height: 160px;
+    }
 
     @media (min-width: $vp-1200) {
       max-width: 768px;

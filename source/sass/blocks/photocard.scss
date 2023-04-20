@@ -17,45 +17,73 @@
 }
 
 .photocard__item {
-  padding: 24px 20px 25px;
+  display: block;
+  height: 100%;
+  padding: 24px 20px 23px;
 
-  border-bottom: 1px solid $color-add-whisper;
+  border-top: 1px solid $color-add-whisper;
 
-  &--full {
-    border-top: 1px solid $color-add-whisper;
+  &:last-child {
+    border-bottom: 1px solid $color-add-whisper;
   }
 
   @media (min-width: $vp-768) {
     width: 50%;
     padding: 0;
 
+    background-color: $color-white-smoke;
     border: none;
 
     &--full {
       width: 100%;
-
-      border: none;
     }
   }
 
   @media (min-width: $vp-1200) {
-    &:not(:first-child) {
+    &:not(&--full) {
       width: calc(100% / 3);
+    }
+
+    &--full .photocard__box {
+      padding-top: 320px;
+    }
+
+    &--full .photocard__name {
+      padding: 22px 22px 15px 21px;
+    }
+
+    &--full .photocard__title {
+      margin: 0;
     }
   }
 }
 
-// Photo
-//------------------------- figure
+// Photo figure
+//-------------------------
 
 .photocard__box {
   position: relative;
 
   margin: 0;
+
+  @media (min-width: $vp-1200) {
+    display: flex;
+    height: 100%;
+    padding-top: 187px;
+  }
 }
 
 .photocard__link {
   display: block;
+
+  @media (min-width: $vp-1200) {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .photocard__image {
@@ -67,11 +95,11 @@
   object-fit: cover;
 
   @media (min-width: $vp-768) {
-    max-height: 267px;
+    max-height: 400px;
+  }
 
-    &--large {
-      max-height: 400px;
-    }
+  @media (min-width: $vp-1200) {
+    max-height: 100%;
   }
 }
 
@@ -84,17 +112,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 22px 20px 15px;
-
-    background-color: $color-white-smoke;
+    padding: 23px 20px 15px;
   }
 
   @media (min-width: $vp-1200) {
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    z-index: 1;
 
     width: 100%;
-    padding: 17px 25px;
+    padding: 17px 20px 17px 25px;
 
     color: $color-white;
 
@@ -111,14 +137,21 @@
 }
 
 .photocard__title {
+  max-width: 180px;
   margin: 0;
-  margin-bottom: 4px;
 
   font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
   text-transform: uppercase;
+
+  @media (min-width: $vp-1200) {
+    margin-bottom: 4px;
+  }
 }
 
 .photocard__description {
+  max-width: 170px;
   margin: 0;
 
   color: $color-night-rider;
@@ -131,6 +164,10 @@
 //---------------------------- likes
 
 .photocard__counter-button {
+  display: flex;
+  align-items: flex-end;
+  padding: 0;
+
   font-family: $ff-ptsans;
 
   background: $transparent;
@@ -139,12 +176,38 @@
 }
 
 .photocard__likes {
+  position: relative;
+
   display: block;
+  padding: 4px 0 4px 37px;
 
   font-weight: 700;
-  color: $color-black;
+  font-size: 14px;
+  line-height: 21px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 23px;
+    height: 21px;
+
+    background: url("../img/photocard/like-icon-black.svg") no-repeat;
+  }
+
+  @media (min-width: $vp-768) {
+    padding-left: 32px;
+  }
 
   @media (min-width: $vp-1200) {
+    padding: 4px 0 0 32px;
+
     color: $color-white;
+
+    &::before {
+      background: url("../img/photocard/like-icon-white.svg") no-repeat;
+    }
   }
 }
