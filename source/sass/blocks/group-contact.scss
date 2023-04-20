@@ -1,4 +1,6 @@
 .group-contact__label {
+  margin-left: 16px;
+
   color: $color-night-rider;
   text-transform: uppercase;
 }
@@ -20,9 +22,7 @@
   }
 
   &--phone {
-    padding-right: 74px;
-
-    font-size: 17px;
+    padding-right: 60px;
 
     background-image: url("../img/form-icon/tel-icon.svg");
     background-repeat: no-repeat;
@@ -30,9 +30,7 @@
   }
 
   &--email {
-    padding-right: 74px;
-
-    font-size: 17px;
+    padding-right: 60px;
 
     background-image: url("../img/form-icon/email-icon.svg");
     background-repeat: no-repeat;
@@ -45,6 +43,10 @@
     min-height: 150px;
 
     resize: none;
+
+    @media (min-width: $vp-768) {
+      min-height: 160px;
+    }
 
     @media (min-width: $vp-1200) {
       max-width: 768px;

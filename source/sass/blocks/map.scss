@@ -2,6 +2,10 @@
   position: relative;
 
   height: 350px;
+
+  @media (max-width: ($vp-768 - 1px)) {
+    margin-bottom: 9px;
+  }
 }
 
 .map__image {

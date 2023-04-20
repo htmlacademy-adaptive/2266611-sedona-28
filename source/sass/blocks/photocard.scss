@@ -17,7 +17,9 @@
 }
 
 .photocard__item {
-  padding: 24px 20px 25px;
+  display: block;
+  height: 100%;
+  padding: 24px 20px 23px;
 
   border-top: 1px solid $color-add-whisper;
 
@@ -44,6 +46,14 @@
 
     &--full .photocard__box {
       padding-top: 320px;
+    }
+
+    &--full .photocard__name {
+      padding: 22px 22px 15px 21px;
+    }
+
+    &--full .photocard__title {
+      margin: 0;
     }
   }
 }
@@ -102,7 +112,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 22px 20px 15px;
+    padding: 23px 20px 15px;
   }
 
   @media (min-width: $vp-1200) {
@@ -110,7 +120,7 @@
     z-index: 1;
 
     width: 100%;
-    padding: 17px 25px;
+    padding: 17px 20px 17px 25px;
 
     color: $color-white;
 
@@ -127,11 +137,17 @@
 }
 
 .photocard__title {
+  max-width: 180px;
   margin: 0;
-  margin-bottom: 4px;
 
   font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
   text-transform: uppercase;
+
+  @media (min-width: $vp-1200) {
+    margin-bottom: 4px;
+  }
 }
 
 .photocard__description {
@@ -159,23 +175,39 @@
   cursor: pointer;
 }
 
-.photocard__like-icon {
-  opacity: 0.3;
-
-  @media (min-width: $vp-1200) {
-    opacity: 1;
-
-    fill: $color-white;
-  }
-}
-
 .photocard__likes {
+  position: relative;
+
   display: block;
-  margin-left: 14px;
+  padding: 4px 0 4px 37px;
 
   font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 23px;
+    height: 21px;
+
+    background: url("../img/photocard/like-icon-black.svg") no-repeat;
+  }
+
+  @media (min-width: $vp-768) {
+    padding-left: 32px;
+  }
 
   @media (min-width: $vp-1200) {
+    padding: 4px 0 0 32px;
+
     color: $color-white;
+
+    &::before {
+      background: url("../img/photocard/like-icon-white.svg") no-repeat;
+    }
   }
 }

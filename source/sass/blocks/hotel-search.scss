@@ -13,9 +13,19 @@
 }
 
 .hotel-search__heading {
+  & .heading__title {
+    margin-bottom: 21px;
+  }
+
   @media (max-width: ($vp-768 - 1px)) {
     & .heading__title {
       font-size: 21px;
+    }
+  }
+
+  @media (min-width: $vp-768) {
+    & .heading__title {
+      margin-bottom: 32px;
     }
   }
 }
@@ -24,4 +34,8 @@
   max-width: 458px;
   margin: 0 auto;
   margin-top: 32px;
+
+  @media (min-width: $vp-768) {
+    margin-top: 45px;
+  }
 }
