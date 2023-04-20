@@ -9,18 +9,18 @@
 .advantages__heading {
   padding: 34px 25px 37px;
 
-  & .heading__title {
+  .heading__title {
     margin-bottom: 36px;
   }
 
-  & .heading__description {
+  .heading__description {
     max-width: 500px;
   }
 
   @media (min-width: $vp-768) {
     padding: 47px 60px 56px;
 
-    & .heading__title {
+    .heading__title {
       margin-bottom: 30px;
 
       font-size: 21px;
@@ -146,7 +146,7 @@
 
   list-style: none;
 
-  & .advantages__description {
+  .advantages__description {
     color: $color-night-rider;
   }
 
@@ -164,7 +164,7 @@
   margin: 0 auto;
   padding: 8px 0 25px 47px;
 
-  & .advantages__subtitle {
+  .advantages__subtitle {
     margin-bottom: 16px;
 
     @media (min-width: $vp-768) {
@@ -236,11 +236,11 @@
 
   background-color: $color-whisper;
 
-  & .advantages__number {
+  .advantages__number {
     color: $color-night-rider;
   }
 
-  & .advantages__description {
+  .advantages__description {
     color: $color-night-rider;
   }
 

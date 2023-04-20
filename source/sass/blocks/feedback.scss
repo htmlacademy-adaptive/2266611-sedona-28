@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $vp-768) and (max-width: ($vp-1200 - 1px)) {
-    & .heading__title {
+    .heading__title {
       margin-bottom: 21px;
     }
   }
