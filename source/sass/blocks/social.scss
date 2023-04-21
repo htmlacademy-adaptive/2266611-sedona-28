@@ -7,6 +7,10 @@
   list-style: none;
 
   gap: 6px;
+
+  @media (min-width: $vp-768) {
+    max-width: 210px;
+  }
 }
 
 .social__link {
@@ -57,5 +61,21 @@
 
     background-image: url("../img/footer-icon/youtube.svg");
     transform: translate(-50%, -50%);
+  }
+
+  &:hover {
+    background-color: $color-shakespeare;
+  }
+
+  &:active {
+    background-color: $color-shakespeare-darken;
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
+
+  &:focus-visible {
+    outline: 3px $color-seagull solid;
   }
 }

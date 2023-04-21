@@ -344,8 +344,10 @@
   }
 
   @media (min-width: $vp-768) and (max-width: ($vp-1200 - 1px)) {
-    &:nth-child(2) .advantages__description {
-      max-width: 163px;
+    &:nth-child(2) {
+      .advantages__description {
+        max-width: 163px;
+      }
     }
   }
 

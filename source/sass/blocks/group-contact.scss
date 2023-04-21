@@ -17,10 +17,6 @@
   background-color: $color-white-smoke;
   border: none;
 
-  &::placeholder {
-    color: rgb($color-black, 0.3);
-  }
-
   &--phone {
     padding-right: 60px;
 
@@ -52,5 +48,23 @@
       max-width: 768px;
       margin: 0 auto;
     }
+  }
+
+  &::placeholder {
+    color: rgb($color-black, 0.3);
+  }
+
+  &:hover {
+    background-color: $color-add-whisper;
+  }
+
+  &:focus-visible {
+    background-color: $color-white;
+    outline: none;
+    box-shadow: 0 0 0 4px $color-add-whisper inset;
+  }
+
+  &:disabled {
+    background-color: rgb($color-black, 0.3);
   }
 }
