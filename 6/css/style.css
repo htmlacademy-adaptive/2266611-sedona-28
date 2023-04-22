@@ -1168,63 +1168,56 @@ a {
 }
 
 .form__list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
+  gap: 16px;
 }
 .form__list--contact {
-  display: flex;
   flex-direction: column;
-  gap: 16px;
 }
-.form__list--radio {
-  display: grid;
-  align-items: center;
-  gap: 16px;
+.form__list--radio .form__item {
+  width: 280px;
 }
-@media (min-width: 768px) {
+@media (max-width: 1199px) {
   .form__list--radio {
     max-width: 576px;
     margin: 0 auto;
-    grid-template-columns: repeat(2, 280px);
   }
 }
 @media (min-width: 1200px) {
   .form__list--radio {
-    max-width: 896px;
-    margin: 0 53px 0;
+    margin: 0 11px 0 53px;
     padding: 17px 0 25px;
     column-gap: 28px;
-    grid-template-columns: 280px 280px 238px;
   }
 }
-.form__list--checkbox {
-  display: grid;
-  align-items: center;
-  column-gap: 32px;
-  row-gap: 16px;
+@media (max-width: 1199px) {
+  .form__list--checkbox .form__item {
+    width: 224px;
+  }
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
+  .form__list--checkbox .form__item {
+    max-width: 184px;
+  }
+}
+@media (max-width: 1199px) {
   .form__list--checkbox {
     max-width: 480px;
     margin: 0 auto;
-    grid-template-columns: repeat(2, 224px);
+    column-gap: 32px;
   }
 }
 @media (min-width: 1200px) {
   .form__list--checkbox {
-    max-width: 883px;
+    justify-content: space-between;
     margin: 0 44px 0;
     padding: 31px 0 39px;
-    column-gap: 44px;
-    grid-template-columns: repeat(4, 184px);
-    justify-items: center;
+    column-gap: 45px;
   }
-}
-
-.form__contact {
-  display: flex;
-  flex-direction: column;
 }
 
 .form__button-wrapper {
@@ -1277,6 +1270,11 @@ a {
   }
 }
 
+.group-contact {
+  display: flex;
+  flex-direction: column;
+}
+
 .group-contact__label {
   margin-left: 16px;
   color: #333333;
@@ -1292,6 +1290,8 @@ a {
   color: #000000;
   background-color: #f2f2f2;
   border: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 .group-contact__input--phone {
   padding-right: 60px;
