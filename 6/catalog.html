@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Academy: Седона</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <base href="https://htmlacademy-adaptive.github.io/2266611-sedona-28/6/">
+</head>
+  <body class="page__body">
+    <div class="page__wrapper">
+      <header class="page-header no-js">
+        <button class="page-header__toggle burger" type="button">
+          <span class="visually-hidden">Открыть/закрыть меню.</span>
+          <span class="burger__line burger__line--top"></span>
+          <span class="burger__line burger__line--mid"></span>
+          <span class="burger__line burger__line--low"></span>
+        </button>
+        <nav class="page-header__nav header-nav">
+          <a class="header-nav__logo header-nav__logo--inner" href="index.html">
+            <img class="header-nav__logo-image" src="img/logo-image.svg" width="185" height="96" alt="Логотип Седоны.">
+          </a>
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link header-nav__link--current" href="#" aria-current="page" tabindex="-1">Фото и видео</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="form.html">Форма Отзыва</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="https://htmlacademy.ru/" target="_blank" rel="nofollow noopener">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="page-main">
+        <h1 class="visually-hidden">Фото и видео из городка Седона.</h1>
+        <!-- Заглавный блок -->
+        <section class="intro intro--inner">
+          <h2 class="visually-hidden">Добро пожаловать в Седону.</h2>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/intro/slogan-inner-desktop.svg">
+            <img class="intro__slogan intro__slogan--inner" src="img/intro/slogan-inner.svg" width="229" height="39" alt="Sedona.">
+          </picture>
+        </section>
+        <!-- Фото -->
+        <section class="photo-content">
+          <div class="photo-content__heading heading">
+            <h2 class="heading__title">Фото и видео</h2>
+            <p class="heading__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+          </div>
+          <ul class="photo-content__list photocard">
+            <li class="photocard__item photocard__item--full">
+              <figure class="photocard__box">
+                <a class="photocard__link" href="#">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photocard/sunset-desktop.jpg 1x, img/photocard/sunset-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photocard/sunset-tablet.jpg 1x, img/photocard/sunset-tablet@2x.jpg 2x">
+                    <img class="photocard__image" src="img/photocard/sunset-mobile.jpg" srcset="img/photocard/sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Пейзаж с закатом солнца.">
+                  </picture>
+                </a>
+                <figcaption class="photocard__name">
+                  <div class="photocard__wrapper">
+                    <h3 class="photocard__title">Неродные просторы</h3>
+                    <p class="photocard__description">Автор фото: Борис</p>
+                  </div>
+                  <button class="photocard__counter-button" type="button">
+                    <span class="photocard__likes">1350</span>
+                    <span class="visually-hidden">Поставить положительную оценку.</span>
+                  </button>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="photocard__item">
+              <figure class="photocard__box">
+                <a class="photocard__link" href="#">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photocard/cactus-desktop.jpg 1x, img/photocard/cactus-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photocard/cactus-tablet.jpg 1x, img/photocard/cactus-tablet@2x.jpg 2x">
+                    <img class="photocard__image" src="img/photocard/cactus-mobile.jpg" srcset="img/photocard/cactus-mobile@2x.jpg 2x" width="280" height="280" alt="Местный кактус.">
+                  </picture>
+                </a>
+                <figcaption class="photocard__name">
+                  <div class="photocard__wrapper">
+                    <h3 class="photocard__title">Местная растительность</h3>
+                    <p class="photocard__description">Автор фото: Сергей</p>
+                  </div>
+                  <button class="photocard__counter-button" type="button">
+                    <span class="photocard__likes">143</span>
+                    <span class="visually-hidden">Поставить положительную оценку.</span>
+                  </button>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="photocard__item">
+              <figure class="photocard__box">
+                <a class="photocard__link" href="#">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photocard/serpentine-desktop.jpg 1x, img/photocard/serpentine-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photocard/serpentine-tablet.jpg 1x, img/photocard/serpentine-tablet@2x.jpg 2x">
+                    <img class="photocard__image" src="img/photocard/serpentine-mobile.jpg" srcset="img/photocard/serpentine-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога-серпантин в Седону.">
+                  </picture>
+                </a>
+                <figcaption class="photocard__name">
+                  <div class="photocard__wrapper">
+                    <h3 class="photocard__title">Дорога на север</h3>
+                    <p class="photocard__description">Автор фото: Петр</p>
+                  </div>
+                  <button class="photocard__counter-button" type="button">
+                    <span class="photocard__likes">96</span>
+                    <span class="visually-hidden">Поставить положительную оценку.</span>
+                  </button>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="photocard__item">
+              <figure class="photocard__box">
+                <a class="photocard__link" href="#">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photocard/rock-desktop.jpg 1x, img/photocard/rock-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photocard/rock-tablet.jpg 1x, img/photocard/rock-tablet@2x.jpg 2x">
+                    <img class="photocard__image" src="img/photocard/rock-mobile.jpg" srcset="img/photocard/rock-mobile@2x.jpg 2x" width="280" height="280" alt="Красные скалы Седоны.">
+                  </picture>
+                </a>
+                <figcaption class="photocard__name">
+                  <div class="photocard__wrapper">
+                    <h3 class="photocard__title">Мост дьявола</h3>
+                    <p class="photocard__description">Автор фото: Антон</p>
+                  </div>
+                    <button class="photocard__counter-button" type="button">
+                      <span class="photocard__likes">254</span>
+                      <span class="visually-hidden">Поставить положительную оценку.</span>
+                    </button>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </section>
+        <!-- Видео -->
+        <section class="video-content">
+          <div class="video-content__heading heading">
+            <h2 class="heading__title">Все еще сомневаетесь?</h2>
+            <p class="heading__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          </div>
+          <div class="video-content__wrapper video-controls">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/video/video-desktop.jpg 1x, img/video/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video/video-tablet.jpg 1x, img/video/video-tablet@2x.jpg 2x">
+              <img class="video-controls__clip" src="img/video/video-mobile.jpg" srcset="img/video/video-mobile@2x.jpg 2x" width="280" height="177" alt="Мост дьявола.">
+            </picture>
+            <a class="video-controls__button" href="#">
+              <span class="visually-hidden">Воспроизвести видео.</span>
+            </a>
+          </div>
+        </section>
+      </main>
+      <footer class="page-footer">
+        <span class="page-footer__hashtag">#VisitSedona</span>
+        <ul class="page-footer__list social">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" target="_blank" rel="nofollow noopener">
+              <span class="visually-hidden">Вконтакте.</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" target="_blank" rel="nofollow noopener">
+              <span class="visually-hidden">Телеграм.</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank" rel="nofollow noopener">
+              <span class="visually-hidden">Youtube.</span>
+            </a>
+          </li>
+        </ul>
+        <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="nofollow noopener">
+          <span class="page-footer__copyright-text">Разработано</span>
+          <svg class="page-footer__copyright-icon" width="28" height="33">
+            <use href="img/sprite.svg#htmlacademy"></use>
+          </svg>
+          <span class="visually-hidden">HTML Academy.</span>
+        </a>
+      </footer>
+    </div>
+    <script src="js/burger-menu.js"></script>
+  </body>
+</html>
