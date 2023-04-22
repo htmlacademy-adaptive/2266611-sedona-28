@@ -121,73 +121,63 @@
 //-----------------------------
 
 .form__list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
   list-style: none;
 
-  &--contact {
-    display: flex;
-    flex-direction: column;
+  gap: 16px;
 
-    gap: 16px;
+  &--contact {
+    flex-direction: column;
   }
 
   &--radio {
-    display: grid;
-    align-items: center;
+    .form__item {
+      width: 280px;
+    }
 
-    gap: 16px;
-
-    @media (min-width: $vp-768) {
+    @media (max-width: ($vp-1200 - 1px)) {
       max-width: 576px;
       margin: 0 auto;
-
-      grid-template-columns: repeat(2, 280px);
     }
 
     @media (min-width: $vp-1200) {
-      max-width: 896px;
-      margin: 0 53px 0;
+      margin: 0 11px 0 53px;
       padding: 17px 0 25px;
 
       column-gap: 28px;
-
-      grid-template-columns: 280px 280px 238px;
     }
   }
 
   &--checkbox {
-    display: grid;
-    align-items: center;
+    .form__item {
+      @media (max-width: ($vp-1200 - 1px)) {
+        width: 224px;
+      }
 
-    column-gap: 32px;
+      @media (min-width: $vp-1200) {
+        max-width: 184px;
+      }
+    }
 
-    row-gap: 16px;
-
-    @media (min-width: $vp-768) {
+    @media (max-width: ($vp-1200 - 1px)) {
       max-width: 480px;
       margin: 0 auto;
 
-      grid-template-columns: repeat(2, 224px);
+      column-gap: 32px;
     }
 
     @media (min-width: $vp-1200) {
-      max-width: 883px;
+      justify-content: space-between;
       margin: 0 44px 0;
       padding: 31px 0 39px;
 
-      column-gap: 44px;
-
-      grid-template-columns: repeat(4, 184px);
-      justify-items: center;
+      column-gap: 45px;
     }
   }
-}
-
-.form__contact {
-  display: flex;
-  flex-direction: column;
 }
 
 // Form button

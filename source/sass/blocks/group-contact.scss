@@ -1,3 +1,9 @@
+
+.group-contact {
+  display: flex;
+  flex-direction: column;
+}
+
 .group-contact__label {
   margin-left: 16px;
 
@@ -16,6 +22,8 @@
 
   background-color: $color-white-smoke;
   border: none;
+
+  appearance: none;
 
   &--phone {
     padding-right: 60px;
