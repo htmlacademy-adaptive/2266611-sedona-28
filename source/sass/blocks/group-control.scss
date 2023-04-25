@@ -50,8 +50,8 @@
   line-height: 26px;
 }
 
-.group-control__input[type="radio"] {
-  &:checked {
+.group-control__input {
+  &[type="radio"]:checked {
     + .group-control__mark::after {
       content: "";
       position: absolute;
@@ -66,10 +66,8 @@
       transform: translateX(-50%) translateY(-50%);
     }
   }
-}
 
-.group-control__input[type="checkbox"] {
-  &:checked {
+  &[type="checkbox"]:checked {
     + .group-control__mark::after {
       content: "";
       position: absolute;
@@ -83,9 +81,7 @@
       transform: translateX(-50%) translateY(-50%);
     }
   }
-}
 
-.group-control__input {
   &:focus-visible {
     + .group-control__mark {
       box-shadow: 0 0 0 3px $color-seagull;
