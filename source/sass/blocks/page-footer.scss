@@ -43,24 +43,14 @@
   justify-content: center;
   align-items: center;
 
-  &:hover {
-    span {
-      color: $color-seagull;
-    }
+  color: $color-black;
 
-    svg {
-      fill: $color-seagull;
-    }
+  &:hover {
+    color: $color-seagull;
   }
 
   &:active {
-    span {
-      color: $color-pink-swan;
-    }
-
-    svg {
-      fill: $color-pink-swan;
-    }
+    color: $color-pink-swan;
   }
 
   &:focus-visible {
@@ -73,6 +63,5 @@
   max-width: 150px;
   margin-right: 12px;
 
-  color: $color-black;
   text-transform: uppercase;
 }
