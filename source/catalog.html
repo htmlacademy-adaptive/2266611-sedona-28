@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
@@ -19,7 +21,7 @@
           <span class="burger__line burger__line--low"></span>
         </button>
         <nav class="page-header__nav header-nav">
-          <a class="header-nav__logo" href="index.html">
+          <a class="header-nav__logo header-nav__logo--inner" href="index.html">
             <img class="header-nav__logo-image" src="img/logo-image.svg" width="185" height="96" alt="Логотип Седоны.">
           </a>
           <ul class="header-nav__list">
@@ -27,7 +29,7 @@
               <a class="header-nav__link" href="index.html">Главная</a>
             </li>
             <li class="header-nav__item">
-              <a class="header-nav__link header-nav__link--current" href="#" aria-current="page">Фото и видео</a>
+              <a class="header-nav__link header-nav__link--current" href="#" aria-current="page" tabindex="-1">Фото и видео</a>
             </li>
             <li class="header-nav__item">
               <a class="header-nav__link" href="form.html">Форма Отзыва</a>
@@ -43,7 +45,10 @@
         <!-- Заглавный блок -->
         <section class="intro intro--inner">
           <h2 class="visually-hidden">Добро пожаловать в Седону.</h2>
-          <img class="intro__slogan intro__slogan--inner" src="img/intro/intro-slogan-inner.svg" width="229" height="39" alt="Sedona.">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/intro/slogan-inner-desktop.svg">
+            <img class="intro__slogan intro__slogan--inner" src="img/intro/slogan-inner.svg" width="229" height="39" alt="Sedona.">
+          </picture>
         </section>
         <!-- Фото -->
         <section class="photo-content">

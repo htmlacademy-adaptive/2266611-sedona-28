@@ -18,21 +18,21 @@
 
 .photocard__item {
   display: block;
-  height: 100%;
-  padding: 24px 20px 23px;
 
-  border-top: 1px solid $color-add-whisper;
+  @media (max-width: ($vp-768 - 1px)) {
+    padding: 24px 20px 23px;
 
-  &:last-child {
-    border-bottom: 1px solid $color-add-whisper;
+    border-top: 1px solid $color-add-whisper;
+
+    &:last-child {
+      border-bottom: 1px solid $color-add-whisper;
+    }
   }
 
   @media (min-width: $vp-768) {
     width: 50%;
-    padding: 0;
 
     background-color: $color-white-smoke;
-    border: none;
 
     &--full {
       width: 100%;
@@ -44,16 +44,18 @@
       width: calc(100% / 3);
     }
 
-    &--full .photocard__box {
-      padding-top: 320px;
-    }
+    &--full {
+      .photocard__box {
+        padding-top: 320px;
+      }
 
-    &--full .photocard__name {
-      padding: 22px 22px 15px 21px;
-    }
+      .photocard__name {
+        padding: 22px 22px 15px 21px;
+      }
 
-    &--full .photocard__title {
-      margin: 0;
+      .photocard__title {
+        margin: 0;
+      }
     }
   }
 }
@@ -75,6 +77,15 @@
 
 .photocard__link {
   display: block;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus-visible {
+    outline: none;
+    opacity: 0.8;
+  }
 
   @media (min-width: $vp-1200) {
     position: absolute;
@@ -173,6 +184,11 @@
   background: $transparent;
   border: none;
   cursor: pointer;
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px $color-seagull;
+  }
 }
 
 .photocard__likes {
@@ -195,6 +211,14 @@
     height: 21px;
 
     background: url("../img/photocard/like-icon-black.svg") no-repeat;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.4;
   }
 
   @media (min-width: $vp-768) {

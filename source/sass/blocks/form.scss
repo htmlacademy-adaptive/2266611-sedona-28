@@ -17,19 +17,27 @@
 
   border: none;
 
-  &--half:first-child {
-    padding-bottom: 39px;
+  @media (max-width: ($vp-768 - 1px)) {
+    &--half:first-child {
+      padding-bottom: 39px;
+    }
+
+    &--half:nth-child(2) {
+      padding-bottom: 34px;
+    }
   }
 
-  &--half:nth-child(2) {
-    padding-bottom: 34px;
+  @media (min-width: $vp-768) and (max-width: ($vp-1200 - 1px)) {
+    &:nth-child(4) {
+      margin-bottom: 42px;
+    }
   }
 
   @media (min-width: $vp-768) {
     position: relative;
 
     width: 100%;
-    margin-bottom: 46px;
+    margin-bottom: 48px;
     padding: 0;
 
     border-top: 1px solid $color-light-grey;
@@ -39,14 +47,6 @@
       margin-bottom: 63px;
 
       border-top: none;
-    }
-
-    &--half:first-child {
-      padding-bottom: 0;
-    }
-
-    &--half:nth-child(2) {
-      padding-bottom: 0;
     }
 
     &:first-child {
@@ -65,8 +65,6 @@
   }
 
   @media (min-width: $vp-1200) {
-    margin-bottom: 48px;
-
     &--half {
       width: calc(50% - 49px);
       margin-bottom: 71px;
@@ -93,16 +91,18 @@
 
   transform: translateY(24px);
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: -20px;
+  @media (max-width: ($vp-768 - 1px)) {
+    &::before {
+      content: "";
+      position: absolute;
+      left: -20px;
 
-    width: calc(100% + 40px);
-    height: 1px;
+      width: calc(100% + 40px);
+      height: 1px;
 
-    background-color: $color-light-grey;
-    transform: translateY(-24px);
+      background-color: $color-light-grey;
+      transform: translateY(-24px);
+    }
   }
 
   @media (min-width: $vp-768) {
@@ -112,10 +112,6 @@
     font-size: 21px;
 
     transform: translateY(0);
-
-    &::before {
-      display: none;
-    }
   }
 }
 
@@ -123,24 +119,16 @@
 //-----------------------------
 
 .form__list {
+  display: grid;
+  align-items: center;
   margin: 0;
   padding: 0;
 
   list-style: none;
 
-  &--contact {
-    display: flex;
-    flex-direction: column;
-
-    gap: 16px;
-  }
+  gap: 16px;
 
   &--radio {
-    display: grid;
-    align-items: center;
-
-    gap: 16px;
-
     @media (min-width: $vp-768) {
       max-width: 576px;
       margin: 0 auto;
@@ -149,8 +137,7 @@
     }
 
     @media (min-width: $vp-1200) {
-      max-width: 896px;
-      margin: 0 53px 0;
+      max-width: 854px;
       padding: 17px 0 25px;
 
       column-gap: 28px;
@@ -160,35 +147,24 @@
   }
 
   &--checkbox {
-    display: grid;
-    align-items: center;
-
-    column-gap: 32px;
-
-    row-gap: 16px;
-
     @media (min-width: $vp-768) {
       max-width: 480px;
       margin: 0 auto;
+
+      column-gap: 32px;
 
       grid-template-columns: repeat(2, 224px);
     }
 
     @media (min-width: $vp-1200) {
-      max-width: 883px;
-      margin: 0 44px 0;
+      max-width: 871px;
       padding: 31px 0 39px;
 
       column-gap: 64px;
 
-      grid-template-columns: repeat(4, max-content);
+      grid-template-columns: 172px 170px 153px 184px;
     }
   }
-}
-
-.form__contact {
-  display: flex;
-  flex-direction: column;
 }
 
 // Form button
