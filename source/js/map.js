@@ -8,7 +8,7 @@ function init(ymaps) {
     iconLayout: 'default#image',
     iconImageHref: "img/map-marker.svg",
     iconImageSize: [27, 27],
-    iconImageOffset: [-13, 0]
+    iconImageOffset: [-13, -12]
   });
 
   map.controls.remove('searchControl');

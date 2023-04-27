@@ -218,6 +218,14 @@
     background-repeat: no-repeat;
   }
 
+  @media (max-width: ($vp-768 - 1px)) {
+    &--souvenirs {
+      br {
+        display: none;
+      }
+    }
+  }
+
   @media (min-width: $vp-768) {
     width: calc(100% / 3);
     padding: 156px 33px 61px;
@@ -253,12 +261,6 @@
 
       background-size: 81px 89px;
       transform: translateX(-50%);
-    }
-
-    &--souvenirs {
-      br {
-        display: none;
-      }
     }
   }
 
@@ -304,43 +306,48 @@
 //-------------------------------
 
 .advantages__features-list {
+  display: grid;
   margin: 0;
-  padding: 0 18px 4px;
+  padding: 0 0 4px;
 
   list-style: none;
   text-align: center;
 
   background-color: $color-whisper;
 
-  .advantages__number {
-    color: $color-night-rider;
-  }
-
+  .advantages__number,
   .advantages__description {
     color: $color-night-rider;
   }
 
   @media (min-width: $vp-768) {
-    display: flex;
-    flex-wrap: wrap;
     padding: 0;
+
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 .advantages__features-item {
-  padding: 24px 15px 24px;
+  position: relative;
+
+  padding: 24px 33px;
 
   @media (max-width: ($vp-768 - 1px)) {
-    border-bottom: 1px solid $color-add-light-grey;
+    &:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 33px;
 
-    &:last-child {
-      border-bottom: none;
+      width: calc(100% - 66px);
+      height: 1px;
+
+      background-color: $color-add-light-grey;
     }
   }
 
   @media (min-width: $vp-768) {
-    width: calc(100% / 3);
-    padding: 41px 33px 41px;
+    padding: 41px 33px;
   }
 
   @media (min-width: $vp-768) and (max-width: ($vp-1200 - 1px)) {

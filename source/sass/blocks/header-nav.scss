@@ -18,16 +18,16 @@
   &--inner {
     &:hover {
       cursor: pointer;
-      filter: drop-shadow(0 -2px 5px $color-night-rider);
+      filter: drop-shadow(0 -2px 3px $color-night-rider);
     }
 
     &:active {
-      filter: drop-shadow(0 -2px 3px $color-night-rider);
+      filter: drop-shadow(0 -2px 2px $color-night-rider);
     }
 
     &:focus-visible {
       outline: none;
-      filter: drop-shadow(0 -2px 5px $color-night-rider);
+      filter: drop-shadow(0 -2px 3px $color-night-rider);
     }
   }
 }
@@ -60,6 +60,8 @@
 
   @media (max-width: ($vp-768 - 1px)) {
     background-color: $color-seagull;
+
+    gap: 1px;
   }
 
   @media (min-width: $vp-768) {
