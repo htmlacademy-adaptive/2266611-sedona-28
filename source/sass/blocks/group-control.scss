@@ -77,7 +77,8 @@
       width: 22px;
       height: 16px;
 
-      background: url("../img/form-icon/tick.svg") no-repeat;
+      background-image: url("../img/sprite.svg#tick");
+      background-repeat: no-repeat;
       transform: translateX(-50%) translateY(-50%);
     }
   }

@@ -33,7 +33,8 @@
     width: 24px;
     height: 24px;
 
-    background-image: url("../img/footer-icon/vk.svg");
+    background-image: url("../img/sprite.svg#vk-icon");
+    background-repeat: no-repeat;
     transform: translate(-50%, -50%);
   }
 
@@ -46,7 +47,8 @@
     width: 24px;
     height: 24px;
 
-    background-image: url("../img/footer-icon/telegram.svg");
+    background-image: url("../img/sprite.svg#telegram-icon");
+    background-repeat: no-repeat;
     transform: translate(-50%, -50%);
   }
 
@@ -59,7 +61,8 @@
     width: 24px;
     height: 24px;
 
-    background-image: url("../img/footer-icon/youtube.svg");
+    background-image: url("../img/sprite.svg#youtube-icon");
+    background-repeat: no-repeat;
     transform: translate(-50%, -50%);
   }
 

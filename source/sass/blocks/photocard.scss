@@ -210,15 +210,9 @@
     width: 23px;
     height: 21px;
 
-    background: url("../img/photocard/like-icon-black.svg") no-repeat;
-  }
-
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.4;
+    mask: url("../img/sprite.svg#like-icon") no-repeat;
+    background-color: $color-black;
+    opacity: 0.3;
   }
 
   @media (min-width: $vp-768) {
@@ -231,7 +225,16 @@
     color: $color-white;
 
     &::before {
-      background: url("../img/photocard/like-icon-white.svg") no-repeat;
+      background-color: $color-white;
+      opacity: 1;
     }
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.4;
   }
 }
