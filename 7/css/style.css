@@ -1485,7 +1485,7 @@ a {
   top: 50%;
   left: 50%;
   width: 24px;
-  height: 24px;
+  height: 14px;
   background-image: url("../img/sprite.svg#vk-icon");
   background-repeat: no-repeat;
   transform: translate(-50%, -50%);
@@ -1495,8 +1495,8 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 24px;
-  height: 24px;
+  width: 21px;
+  height: 18px;
   background-image: url("../img/sprite.svg#telegram-icon");
   background-repeat: no-repeat;
   transform: translate(-50%, -50%);
@@ -1506,8 +1506,8 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 14px;
   background-image: url("../img/sprite.svg#youtube-icon");
   background-repeat: no-repeat;
   transform: translate(-50%, -50%);
