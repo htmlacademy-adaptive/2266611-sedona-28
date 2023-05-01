@@ -171,14 +171,6 @@
   margin: 0 auto;
   padding: 8px 0 25px 47px;
 
-  .advantages__subtitle {
-    margin-bottom: 16px;
-
-    @media (min-width: $vp-768) {
-      margin-bottom: 23px;
-    }
-  }
-
   &--housing::before {
     content: "";
     position: absolute;
@@ -216,6 +208,14 @@
 
     background-image: url("../img/sprite.svg#gift-icon");
     background-repeat: no-repeat;
+  }
+
+  .advantages__subtitle {
+    margin-bottom: 16px;
+
+    @media (min-width: $vp-768) {
+      margin-bottom: 23px;
+    }
   }
 
   @media (max-width: ($vp-768 - 1px)) {
@@ -286,12 +286,13 @@
     }
 
     &--souvenirs::before {
-      top: 66px;
+      top: 69px;
 
-      width: 82px;
-      height: 82px;
+      width: 77px;
+      height: 75px;
 
-      background-size: 82px 82px;
+      background-size: 77px 75px;
+      transform: translate(-50%) scaleX(1.22);
     }
 
     &--souvenirs {
