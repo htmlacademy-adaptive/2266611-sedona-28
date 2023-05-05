@@ -21,8 +21,6 @@
   height: 48px;
 
   background-color: $color-seagull;
-  background-repeat: no-repeat;
-  background-position: center;
 
   &--vkontakte::after {
     content: "";
@@ -33,7 +31,7 @@
     width: 24px;
     height: 14px;
 
-    background-image: url("../img/sprite.svg#vk-icon");
+    background-image: url("../img/svg/vk-icon.svg");
     background-repeat: no-repeat;
     transform: translate(-50%, -50%);
   }
@@ -47,7 +45,7 @@
     width: 21px;
     height: 18px;
 
-    background-image: url("../img/sprite.svg#telegram-icon");
+    background-image: url("../img/svg/telegram-icon.svg");
     background-repeat: no-repeat;
     transform: translate(-50%, -50%);
   }
@@ -61,7 +59,7 @@
     width: 20px;
     height: 14px;
 
-    background-image: url("../img/sprite.svg#youtube-icon");
+    background-image: url("../img/svg/youtube-icon.svg");
     background-repeat: no-repeat;
     transform: translate(-50%, -50%);
   }

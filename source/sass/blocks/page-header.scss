@@ -131,19 +131,21 @@
       cursor: default;
     }
 
-    &:not(&--current):hover {
-      color: $color-seagull;
-    }
+    &:not(&--current) {
+      &:hover {
+        color: $color-seagull;
+      }
 
-    &:not(&--current):active {
-      color: rgb($color-black, 0.3);
-    }
+      &:active {
+        color: rgb($color-black, 0.3);
+      }
 
-    &:not(&--current):focus-visible {
-      color: $color-seagull;
+      &:focus-visible {
+        color: $color-seagull;
 
-      background-color: $color-white-smoke;
-      outline: none;
+        background-color: $color-white-smoke;
+        outline: none;
+      }
     }
   }
 }

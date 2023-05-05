@@ -7,7 +7,7 @@
 //---------------------
 
 .advantages__heading {
-  padding: 34px 25px 37px;
+  padding: 34px 25px 36px;
 
   .heading__title {
     margin-bottom: 36px;
@@ -18,17 +18,17 @@
   }
 
   @media (min-width: $vp-768) {
-    padding: 47px 60px 56px;
+    padding: 49px 60px 55px;
 
     .heading__title {
-      margin-bottom: 30px;
+      margin-bottom: 29px;
 
       font-size: 21px;
     }
   }
 
   @media (min-width: $vp-1200) {
-    padding: 59px 120px 45px;
+    padding: 60px 120px 44px;
   }
 }
 
@@ -58,6 +58,10 @@
     &--columns {
       grid-template-columns: 2fr 1fr;
     }
+
+    picture {
+      position: relative;
+    }
   }
 }
 
@@ -71,7 +75,7 @@
   color: $color-white;
 
   @media (min-width: $vp-768) {
-    padding: 52px 33px 32px;
+    padding: 52px 33px 30px;
 
     &--order {
       order: 1;
@@ -99,6 +103,13 @@
   @media (max-width: ($vp-768 - 1px)) {
     max-height: 260px;
   }
+
+  @media (min-width: $vp-768) {
+    position: absolute;
+    top: 50%;
+
+    transform: translateY(-50%);
+  }
 }
 
 // Subtitle & Description
@@ -113,7 +124,7 @@
 
   @media (min-width: $vp-768) {
     max-width: 159px;
-    margin-bottom: 14px;
+    margin-bottom: 15px;
 
     font-size: 21px;
   }
@@ -126,6 +137,10 @@
   margin-bottom: 17px;
 
   @media (min-width: $vp-768) {
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $vp-1200) {
     margin-bottom: 23px;
   }
 }
@@ -180,8 +195,9 @@
     width: 40px;
     height: 40px;
 
-    background-image: url("../img/sprite.svg#house-icon");
+    background-image: url("../img/svg/house-icon.svg");
     background-repeat: no-repeat;
+    background-size: 40px 40px;
   }
 
   &--eating::before {
@@ -193,8 +209,9 @@
     width: 40px;
     height: 40px;
 
-    background-image: url("../img/sprite.svg#burger-icon");
+    background-image: url("../img/svg/burger-icon.svg");
     background-repeat: no-repeat;
+    background-size: 40px 40px;
   }
 
   &--souvenirs::before {
@@ -206,8 +223,9 @@
     width: 40px;
     height: 40px;
 
-    background-image: url("../img/sprite.svg#gift-icon");
+    background-image: url("../img/svg/gift-icon.svg");
     background-repeat: no-repeat;
+    background-size: 40px 40px;
   }
 
   .advantages__subtitle {
@@ -228,7 +246,7 @@
 
   @media (min-width: $vp-768) {
     width: calc(100% / 3);
-    padding: 156px 33px 61px;
+    padding: 156px 33px 64px;
 
     &--housing::before {
       top: 56px;
@@ -253,13 +271,13 @@
     }
 
     &--souvenirs::before {
-      top: 56px;
+      top: 62px;
       left: 50%;
 
-      width: 81px;
-      height: 89px;
+      width: 67px;
+      height: 77px;
 
-      background-size: 81px 89px;
+      background-size: 67px 77px;
       transform: translateX(-50%);
     }
   }
@@ -309,7 +327,7 @@
 .advantages__features-list {
   display: grid;
   margin: 0;
-  padding: 0 0 4px;
+  padding: 0 0 1px;
 
   list-style: none;
   text-align: center;
@@ -331,16 +349,16 @@
 .advantages__features-item {
   position: relative;
 
-  padding: 24px 33px;
+  padding: 25px 33px;
 
   @media (max-width: ($vp-768 - 1px)) {
     &:not(:last-child)::after {
       content: "";
       position: absolute;
       bottom: 0;
-      left: 33px;
+      left: 18px;
 
-      width: calc(100% - 66px);
+      width: calc(100% - 36px);
       height: 1px;
 
       background-color: $color-add-light-grey;

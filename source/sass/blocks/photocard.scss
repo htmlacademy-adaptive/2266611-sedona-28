@@ -77,9 +77,12 @@
 
 .photocard__link {
   display: block;
+  overflow: hidden;
 
   &:hover {
-    opacity: 0.8;
+    .photocard__image {
+      transform: scale(1.01);
+    }
   }
 
   &:focus-visible {
@@ -214,7 +217,7 @@
     background-color: $color-black;
     opacity: 0.3;
 
-    mask: url("../img/sprite.svg#like-icon") no-repeat;
+    mask: url("../img/svg/like-icon.svg") no-repeat;
   }
 
   @media (min-width: $vp-768) {
