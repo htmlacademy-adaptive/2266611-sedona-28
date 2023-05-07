@@ -2,14 +2,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 0;
+  max-width: 210px;
+  margin: 0 auto;
+  padding: 30px 0 30px;
 
   list-style: none;
 
   gap: 6px;
 
   @media (min-width: $vp-768) {
-    max-width: 210px;
+    padding: 0;
   }
 }
 
@@ -21,8 +23,6 @@
   height: 48px;
 
   background-color: $color-seagull;
-  background-repeat: no-repeat;
-  background-position: center;
 
   &--vkontakte::after {
     content: "";
@@ -31,9 +31,10 @@
     left: 50%;
 
     width: 24px;
-    height: 24px;
+    height: 14px;
 
-    background-image: url("../img/footer-icon/vk.svg");
+    background-image: url("../img/svg/vk-icon.svg");
+    background-repeat: no-repeat;
     transform: translate(-50%, -50%);
   }
 
@@ -43,10 +44,11 @@
     top: 50%;
     left: 50%;
 
-    width: 24px;
-    height: 24px;
+    width: 21px;
+    height: 18px;
 
-    background-image: url("../img/footer-icon/telegram.svg");
+    background-image: url("../img/svg/telegram-icon.svg");
+    background-repeat: no-repeat;
     transform: translate(-50%, -50%);
   }
 
@@ -56,10 +58,11 @@
     top: 50%;
     left: 50%;
 
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 14px;
 
-    background-image: url("../img/footer-icon/youtube.svg");
+    background-image: url("../img/svg/youtube-icon.svg");
+    background-repeat: no-repeat;
     transform: translate(-50%, -50%);
   }
 

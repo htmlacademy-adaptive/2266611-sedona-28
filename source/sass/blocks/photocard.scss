@@ -77,9 +77,12 @@
 
 .photocard__link {
   display: block;
+  overflow: hidden;
 
   &:hover {
-    opacity: 0.8;
+    .photocard__image {
+      transform: scale(1.01);
+    }
   }
 
   &:focus-visible {
@@ -180,6 +183,7 @@
   padding: 0;
 
   font-family: $ff-ptsans;
+  color: $color-black;
 
   background: $transparent;
   border: none;
@@ -210,15 +214,10 @@
     width: 23px;
     height: 21px;
 
-    background: url("../img/photocard/like-icon-black.svg") no-repeat;
-  }
+    background-color: $color-black;
+    opacity: 0.3;
 
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.4;
+    mask: url("../img/svg/like-icon.svg") no-repeat;
   }
 
   @media (min-width: $vp-768) {
@@ -231,7 +230,16 @@
     color: $color-white;
 
     &::before {
-      background: url("../img/photocard/like-icon-white.svg") no-repeat;
+      background-color: $color-white;
+      opacity: 1;
     }
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.4;
   }
 }
