@@ -4,7 +4,11 @@ function init(ymaps) {
     zoom: 7
   });
 
-  const placemark = new ymaps.Placemark([34.87074, -111.76], {}, {
+  const placemark = new ymaps.Placemark([34.87074, -111.76], {
+    balloonContentHeader: 'Седона',
+    balloonContentBody: 'Аризона 86336',
+    balloonContentFooter: 'США'
+  }, {
     iconLayout: 'default#image',
     iconImageHref: "img/map-marker.svg",
     iconImageSize: [27, 27],
