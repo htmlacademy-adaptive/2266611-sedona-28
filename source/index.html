@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Узнайте о лучших местах для проживания, питания и отдыха в прекрасном курортном городке в центре Аризоны.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
     <div class="page__wrapper">
@@ -60,6 +61,9 @@
               <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </figcaption>
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/photo-city-desktop.webp 1x, img/content/photo-city-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/content/photo-city-tablet.webp 1x, img/content/photo-city-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/content/photo-city.webp 1x, img/content/photo-city@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/content/photo-city-desktop.jpg 1x, img/content/photo-city-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/content/photo-city-tablet.jpg 1x, img/content/photo-city-tablet@2x.jpg 2x">
               <img class="advantages__image" src="img/content/photo-city.jpg" srcset="img/content/photo-city@2x.jpg 2x" width="320" height="260" alt="Ресторан под открытым небом с видом на знаменитые красные скалы Седоны.">
@@ -124,6 +128,9 @@
         <section class="map">
           <h2 class="visually-hidden">Седона на интерактивной карте.</h2>
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/map-desktop.webp 1x, img/content/map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/content/map-tablet.webp 1x, img/content/map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/content/map-mobile.webp 1x, img/content/map-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/content/map-desktop.jpg 1x, img/content/map-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/content/map-tablet.jpg 1x, img/content/map-tablet@2x.jpg 2x">
             <img class="map__image" src="img/content/map-mobile.jpg" srcset="img/content/map-mobile@2x.jpg 2x" width="320" height="350" alt="Карта расположения Седоны.">
@@ -159,8 +166,8 @@
         </a>
       </footer>
     </div>
-    <script src="js/burger-menu.js"></script>
-    <script src="js/map.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&onload=init"></script>
+    <script src="js/burger-menu.min.js"></script>
+    <script src="js/map.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&onload=init" async></script>
   </body>
 </html>
