@@ -10,7 +10,7 @@ function init(ymaps) {
     balloonContentFooter: 'США'
   }, {
     iconLayout: 'default#image',
-    iconImageHref: "img/map-marker.svg",
+    iconImageHref: "img/svg/map-marker.svg",
     iconImageSize: [27, 27],
     iconImageOffset: [-13, -12]
   });
