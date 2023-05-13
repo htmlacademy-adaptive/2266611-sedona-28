@@ -89,6 +89,9 @@
   }
 
   @media (min-width: $vp-768) {
+    display: flex;
+    justify-content: center;
+
     &:nth-child(4n - 1) {
       grid-column-start: 4;
     }

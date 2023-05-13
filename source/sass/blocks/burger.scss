@@ -18,6 +18,14 @@
   @media (min-width: $vp-768) {
     display: none;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .burger__line {
