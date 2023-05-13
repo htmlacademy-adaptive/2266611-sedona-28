@@ -125,7 +125,7 @@
   @media (min-width: $vp-768) {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding: 23px 20px 15px;
   }
 
@@ -133,6 +133,7 @@
     position: relative;
     z-index: 1;
 
+    align-items: center;
     width: 100%;
     padding: 17px 20px 17px 25px;
 
@@ -221,10 +222,12 @@
   }
 
   @media (min-width: $vp-768) {
+    margin-top: 5px;
     padding-left: 32px;
   }
 
   @media (min-width: $vp-1200) {
+    margin-top: 0;
     padding: 4px 0 0 32px;
 
     color: $color-white;
