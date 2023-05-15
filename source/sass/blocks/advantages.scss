@@ -250,7 +250,18 @@
     padding: 156px 33px 64px;
 
     &--housing::before {
-      top: 56px;
+      top: 58px;
+      left: 50%;
+
+      width: 78px;
+      height: 77px;
+
+      background-size: 78px 77px;
+      transform: translateX(-50%);
+    }
+
+    &--eating::before {
+      top: 58px;
       left: 50%;
 
       width: 80px;
@@ -260,25 +271,14 @@
       transform: translateX(-50%);
     }
 
-    &--eating::before {
-      top: 56px;
-      left: 50%;
-
-      width: 80px;
-      height: 78px;
-
-      background-size: 80px 78px;
-      transform: translateX(-50%);
-    }
-
     &--souvenirs::before {
       top: 62px;
       left: 50%;
 
-      width: 67px;
-      height: 77px;
+      width: 75px;
+      height: 79px;
 
-      background-size: 67px 77px;
+      background-size: 81px 79px;
       transform: translateX(-50%);
     }
   }
@@ -287,30 +287,30 @@
     padding: 169px 50px 69px;
 
     &--housing::before {
-      top: 67px;
+      top: 66px;
 
-      width: 77px;
-      height: 76px;
+      width: 80px;
+      height: 78px;
 
-      background-size: 77px 76px;
+      background-size: 80px 78px;
     }
 
     &--eating::before {
-      top: 70px;
+      top: 68px;
 
-      width: 74px;
-      height: 70px;
+      width: 77px;
+      height: 78px;
 
-      background-size: 74px 70px;
+      background-size: 73px 78px;
     }
 
     &--souvenirs::before {
       top: 69px;
 
-      width: 77px;
+      width: 95px;
       height: 75px;
 
-      background-size: 77px 75px;
+      background-size: 95px 75px;
     }
 
     &--souvenirs {

@@ -12,6 +12,8 @@
 }
 
 .group-contact__input {
+  position: relative;
+
   padding: 16px;
 
   font-weight: 700;
@@ -26,8 +28,6 @@
   appearance: none;
 
   &--phone {
-    padding-right: 60px;
-
     background-image: url("../img/svg/tel-icon.svg");
     background-repeat: no-repeat;
     background-position: right;
@@ -35,8 +35,6 @@
   }
 
   &--email {
-    padding-right: 60px;
-
     background-image: url("../img/svg/email-icon.svg");
     background-repeat: no-repeat;
     background-position: right;
@@ -61,8 +59,13 @@
   }
 
   &::placeholder {
-    opacity: 1;
     color: rgb($color-black, 0.3);
+
+    opacity: 1;
+  }
+
+  &:not(:placeholder-shown) {
+    background-image: none;
   }
 
   &:hover {
@@ -71,11 +74,23 @@
 
   &:focus-visible {
     background-color: $color-white;
+    background-image: none;
     outline: none;
     box-shadow: 0 0 0 4px $color-add-whisper inset;
   }
 
   &:disabled {
     background-color: rgb($color-black, 0.3);
+  }
+
+  &::-webkit-contacts-auto-fill-button {
+    position: absolute;
+    left: 0;
+
+    display: none;
+
+    visibility: hidden;
+
+    pointer-events: none;
   }
 }
