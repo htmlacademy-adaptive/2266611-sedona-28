@@ -1,10 +1,9 @@
-
 .advantages {
   text-transform: uppercase;
 }
 
 // Heading
-//---------------------
+//--------------------------------------
 
 .advantages__heading {
   padding: 34px 25px 36px;
@@ -32,10 +31,54 @@
   }
 }
 
+// Subtitle & Description
+//--------------------------------------
+
+.advantages__subtitle {
+  margin: 0 auto 11px;
+
+  font-size: 18px;
+  line-height: 26px;
+
+  @media (min-width: $vp-768) {
+    max-width: 159px;
+    margin-bottom: 15px;
+
+    font-size: 21px;
+  }
+}
+
+.advantages__number {
+  display: block;
+  max-width: 190px;
+  margin: 0 auto 17px;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $vp-1200) {
+    margin-bottom: 23px;
+  }
+}
+
+.advantages__description {
+  margin: 0 auto;
+
+  @media (min-width: $vp-768) {
+    max-width: 190px;
+  }
+
+  @media (min-width: $vp-1200) {
+    max-width: 286px;
+  }
+}
+
 // Figure
-//---------------------
+//--------------------------------------
 
 .advantages__depiction {
+  display: grid;
   margin: 0;
 
   background-color: $color-seagull;
@@ -51,8 +94,6 @@
   }
 
   @media (min-width: $vp-768) {
-    display: grid;
-
     grid-template-columns: 1fr 2fr;
 
     &--columns {
@@ -66,9 +107,6 @@
 }
 
 .advantages__depiction-about {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   padding: 37px 18px;
 
   text-align: center;
@@ -112,53 +150,8 @@
   }
 }
 
-// Subtitle & Description
-//--------------------
-
-.advantages__subtitle {
-  margin: 0 auto;
-  margin-bottom: 11px;
-
-  font-size: 18px;
-  line-height: 26px;
-
-  @media (min-width: $vp-768) {
-    max-width: 159px;
-    margin-bottom: 15px;
-
-    font-size: 21px;
-  }
-}
-
-.advantages__number {
-  display: block;
-  max-width: 190px;
-  margin: 0 auto;
-  margin-bottom: 17px;
-
-  @media (min-width: $vp-768) {
-    margin-bottom: 22px;
-  }
-
-  @media (min-width: $vp-1200) {
-    margin-bottom: 23px;
-  }
-}
-
-.advantages__description {
-  margin: 0 auto;
-
-  @media (min-width: $vp-768) {
-    max-width: 190px;
-  }
-
-  @media (min-width: $vp-1200) {
-    max-width: 286px;
-  }
-}
-
 // Services list
-//-----------------------------
+//--------------------------------------
 
 .advantages__services-list {
   display: grid;
@@ -322,7 +315,7 @@
 }
 
 // Features list
-//-------------------------------
+//--------------------------------------
 
 .advantages__features-list {
   display: grid;
