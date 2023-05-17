@@ -2,11 +2,8 @@
   text-transform: uppercase;
 }
 
-// Heading
-//--------------------------------------
-
 .advantages__heading {
-  padding: 34px 25px 36px;
+  padding: 34px 25px 36px 25px;
 
   .heading__title {
     margin-bottom: 36px;
@@ -17,7 +14,7 @@
   }
 
   @media (min-width: $vp-768) {
-    padding: 49px 60px 55px;
+    padding: 49px 60px 55px 60px;
 
     .heading__title {
       margin-bottom: 29px;
@@ -27,15 +24,12 @@
   }
 
   @media (min-width: $vp-1200) {
-    padding: 60px 120px 44px;
+    padding: 60px 120px 44px 120px;
   }
 }
 
-// Subtitle & Description
-//--------------------------------------
-
 .advantages__subtitle {
-  margin: 0 auto 11px;
+  margin: 0 auto 11px auto;
 
   font-size: 18px;
   line-height: 26px;
@@ -51,7 +45,7 @@
 .advantages__number {
   display: block;
   max-width: 190px;
-  margin: 0 auto 17px;
+  margin: 0 auto 17px auto;
 
   @media (min-width: $vp-768) {
     margin-bottom: 22px;
@@ -74,9 +68,6 @@
   }
 }
 
-// Figure
-//--------------------------------------
-
 .advantages__depiction {
   display: grid;
   margin: 0;
@@ -88,7 +79,7 @@
       clip-path: polygon(50% 3%, 100% 0, 100% 100%, 0 100%, 0 0);
 
       .advantages__depiction-about {
-        padding: 49px 18px 40px;
+        padding: 49px 18px 40px 18px;
       }
     }
   }
@@ -113,7 +104,7 @@
   color: $color-white;
 
   @media (min-width: $vp-768) {
-    padding: 52px 33px 30px;
+    padding: 52px 33px 30px 33px;
 
     &--order {
       order: 1;
@@ -121,7 +112,7 @@
   }
 
   @media (min-width: $vp-1200) {
-    padding: 52px 50px 51px;
+    padding: 52px 50px 51px 50px;
 
     &--order {
       .advantages__description {
@@ -150,13 +141,10 @@
   }
 }
 
-// Services list
-//--------------------------------------
-
 .advantages__services-list {
   display: grid;
   margin: 0;
-  padding: 23px 18px 21px;
+  padding: 23px 18px 21px 18px;
 
   list-style: none;
 
@@ -240,7 +228,7 @@
   }
 
   @media (min-width: $vp-768) {
-    padding: 156px 33px 64px;
+    padding: 156px 33px 64px 33px;
 
     &--housing::before {
       top: 58px;
@@ -277,7 +265,7 @@
   }
 
   @media (min-width: $vp-1200) {
-    padding: 169px 50px 69px;
+    padding: 169px 50px 69px 50px;
 
     &--housing::before {
       top: 66px;
@@ -314,13 +302,10 @@
   }
 }
 
-// Features list
-//--------------------------------------
-
 .advantages__features-list {
   display: grid;
   margin: 0;
-  padding: 0 0 1px;
+  padding: 0 0 1px 0;
 
   list-style: none;
   text-align: center;

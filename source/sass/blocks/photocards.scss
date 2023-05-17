@@ -1,20 +1,14 @@
-// Heading
-//--------------------------------------
-
 .photocards__heading {
-  padding: 38px 20px 37px;
+  padding: 38px 20px 37px 20px;
 
   @media (min-width: $vp-768) {
-    padding: 66px 60px 80px;
+    padding: 66px 60px 80px 60px;
   }
 
   @media (min-width: $vp-1200) {
-    padding: 98px 120px 90px;
+    padding: 98px 120px 90px 120px;
   }
 }
-
-// Photo list
-//--------------------------------------
 
 .photocards__list {
   margin: 0;
@@ -25,7 +19,7 @@
   @media (min-width: $vp-768) {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 60px 0;
+    padding: 0 60px 0 60px;
   }
 
   @media (min-width: $vp-1200) {
@@ -37,7 +31,7 @@
   display: block;
 
   @media (max-width: ($vp-768 - 1px)) {
-    padding: 24px 20px 23px;
+    padding: 24px 20px 23px 20px;
 
     border-top: 1px solid $color-add-whisper;
 
@@ -58,11 +52,19 @@
         margin-right: 150px;
       }
     }
+
+    &:not(&--full):nth-child(odd) .photocards__name {
+      background-color: $color-back-whisper;
+    }
   }
 
   @media (min-width: $vp-1200) {
     &:not(&--full) {
       width: calc(100% / 3);
+    }
+
+    &:not(&--full):nth-child(odd) .photocards__name {
+      background-color: rgba($color-black, 0.3);
     }
 
     &--full {
@@ -77,12 +79,13 @@
       .photocards__title {
         margin: 0;
       }
+
+      .photocards__likes {
+        margin-bottom: 8px;
+      }
     }
   }
 }
-
-// Photo figure
-//--------------------------------------
 
 .photocards__box {
   position: relative;
@@ -140,16 +143,14 @@
   }
 }
 
-//-------------------------------------- figcaption
-
 .photocards__name {
-  padding: 15px 0 0;
+  padding: 15px 0 0 0;
 
   @media (min-width: $vp-768) {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 23px 20px 15px;
+    padding: 23px 20px 15px 20px;
   }
 
   @media (min-width: $vp-1200) {
@@ -162,7 +163,7 @@
 
     color: $color-white;
 
-    background-color: rgb($color-black, 0.3);
+    background-color: rgba($color-black, 0.3);
   }
 }
 
@@ -196,8 +197,6 @@
     color: $color-white;
   }
 }
-
-//-------------------------------------- likes
 
 .photocards__counter {
   display: flex;
@@ -239,7 +238,8 @@
     background-color: $color-black;
     opacity: 0.3;
 
-    mask: url("../img/svg/like-icon.svg") no-repeat;
+    mask-image: url("../img/svg/like-icon.svg");
+    mask-repeat: no-repeat;
   }
 
   @media (min-width: $vp-768) {

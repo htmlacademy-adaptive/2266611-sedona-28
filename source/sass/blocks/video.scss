@@ -1,24 +1,24 @@
 .video {
-  padding: 0 20px 0;
+  padding: 0 20px 0 20px;
 
   @media (min-width: $vp-768) {
-    padding: 0 60px 40px;
+    padding: 0 60px 40px 60px;
   }
 
   @media (min-width: $vp-1200) {
-    padding: 0 200px 84px;
+    padding: 0 200px 84px 200px;
   }
 }
 
 .video__heading {
-  padding: 17px 6px 40px;
+  padding: 17px 6px 40px 6px;
 
   @media (min-width: $vp-768) {
-    padding: 57px 0 90px;
+    padding: 57px 0 90px 0;
   }
 
   @media (min-width: $vp-1200) {
-    padding: 60px 0 86px;
+    padding: 60px 0 86px 0;
   }
 }
 
@@ -47,17 +47,17 @@
   width: 48px;
   height: 54px;
 
-  background-color: rgb($color-white, 0.7);
+  background-color: rgba($color-white, 0.7);
   transform: translateX(-50%) translateY(-50%);
 
   clip-path: polygon(0 0, 0% 100%, 100% 50%);
 
   &:hover {
-    background-color: rgb($color-white, 0.9);
+    background-color: rgba($color-white, 0.9);
   }
 
   &:active {
-    background-color: rgb($color-white, 0.5);
+    background-color: rgba($color-white, 0.5);
   }
 
   &:focus-visible {

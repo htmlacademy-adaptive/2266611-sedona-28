@@ -1,11 +1,8 @@
-// Heading
-//--------------------------------------
-
 .feedback__heading {
-  padding: 36px 20px 28px;
+  padding: 36px 20px 28px 20px;
 
   @media (min-width: $vp-768) {
-    padding: 64px 60px 44px;
+    padding: 64px 60px 44px 60px;
   }
 
   @media (min-width: $vp-768) and (max-width: ($vp-1200 - 1px)) {
@@ -15,12 +12,9 @@
   }
 
   @media (min-width: $vp-1200) {
-    padding: 115px 120px 4px;
+    padding: 115px 120px 4px 120px;
   }
 }
-
-// Form
-//--------------------------------------
 
 .feedback__form {
   @media (min-width: $vp-768) {
@@ -37,7 +31,7 @@
 
 .feedback__fieldset {
   margin: 0;
-  padding: 25px 20px 24px;
+  padding: 25px 20px 24px 20px;
 
   border: none;
 
@@ -73,18 +67,16 @@
       border-top: none;
     }
 
-    &:first-child {
-      &::after {
-        content: "";
-        position: absolute;
-        top: -63px;
-        right: -29px;
+    &:first-child::after {
+      content: "";
+      position: absolute;
+      top: -63px;
+      right: -29px;
 
-        width: 1px;
-        height: calc(100% + 69px);
+      width: 1px;
+      height: calc(100% + 69px);
 
-        background-color: $color-gainsboro;
-      }
+      background-color: $color-gainsboro;
     }
   }
 
@@ -94,10 +86,8 @@
       margin-bottom: 71px;
     }
 
-    &:first-child {
-      &::after {
-        right: -49px;
-      }
+    &:first-child::after {
+      right: -49px;
     }
   }
 }
@@ -139,9 +129,6 @@
   }
 }
 
-// Form lists
-//--------------------------------------
-
 .feedback__list {
   display: grid;
   align-items: center;
@@ -162,7 +149,7 @@
 
     @media (min-width: $vp-1200) {
       max-width: 854px;
-      padding: 17px 0 25px;
+      padding: 17px 0 25px 0;
 
       column-gap: 28px;
 
@@ -182,7 +169,7 @@
 
     @media (min-width: $vp-1200) {
       max-width: 871px;
-      padding: 31px 0 39px;
+      padding: 31px 0 39px 0;
 
       column-gap: 63px;
 
@@ -190,9 +177,6 @@
     }
   }
 }
-
-// Contact group
-//--------------------------------------
 
 .feedback__contact {
   display: flex;
@@ -257,7 +241,7 @@
   }
 
   &::placeholder {
-    color: rgb($color-black, 0.3);
+    color: rgba($color-black, 0.3);
 
     opacity: 1;
   }
@@ -273,7 +257,7 @@
   }
 
   &:disabled {
-    background-color: rgb($color-black, 0.3);
+    background-color: rgba($color-black, 0.3);
   }
 
   &::-webkit-contacts-auto-fill-button {
@@ -287,9 +271,6 @@
     pointer-events: none;
   }
 }
-
-// Control group
-//--------------------------------------
 
 .feedback__control {
   position: relative;
@@ -382,21 +363,18 @@
 
   &:disabled {
     + .feedback__control-mark {
-      background-color: rgb($color-black, 0.3);
+      background-color: rgba($color-black, 0.3);
       cursor: default;
     }
   }
 }
-
-// Form button
-//--------------------------------------
 
 .feedback__button-wrapper {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
-  margin: 31px 0 23px;
+  margin: 31px 0 23px 0;
   padding: 0 20px;
 
   @media (min-width: $vp-768) {
@@ -422,16 +400,13 @@
   }
 }
 
-// Form stint
-//--------------------------------------
-
 .feedback__stint {
   max-width: 250px;
   margin-top: 3px;
   margin-left: auto;
 
   font-size: 12px;
-  color: rgb($color-night-rider, 0.6);
+  color: rgba($color-night-rider, 0.6);
   text-transform: uppercase;
 
   @media (min-width: $vp-768) {
