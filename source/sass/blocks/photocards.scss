@@ -53,6 +53,10 @@
 
     &--full {
       width: 100%;
+
+      .photocards__wrapper {
+        margin-right: 150px;
+      }
     }
   }
 
@@ -166,12 +170,11 @@
   margin-bottom: 11px;
 
   @media (min-width: $vp-768) {
-    margin-bottom: 0;
+    margin: 0 45px 0 0;
   }
 }
 
 .photocards__title {
-  max-width: 180px;
   margin: 0;
 
   font-weight: 700;
@@ -185,7 +188,6 @@
 }
 
 .photocards__description {
-  max-width: 170px;
   margin: 0;
 
   color: $color-night-rider;

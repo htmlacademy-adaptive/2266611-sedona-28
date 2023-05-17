@@ -13,7 +13,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     padding: 36px 60px;
   }
 
@@ -34,6 +34,10 @@
   @media (max-width: ($vp-768 - 1px)) {
     margin: 0 auto;
   }
+
+  @media (min-width: $vp-768) {
+    margin-top: 11px;
+  }
 }
 
 .page-footer__copyright {
@@ -42,6 +46,10 @@
   align-items: center;
 
   color: $color-black;
+
+  @media (min-width: $vp-768) {
+    margin-top: 7px;
+  }
 
   &:hover {
     color: $color-seagull;
@@ -62,4 +70,8 @@
   margin-right: 12px;
 
   text-transform: uppercase;
+}
+
+.page-footer__copyright-icon {
+  flex-shrink: 0;
 }

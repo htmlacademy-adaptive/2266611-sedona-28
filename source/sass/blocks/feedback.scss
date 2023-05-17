@@ -317,13 +317,11 @@
 
 .feedback__control-mark {
   position: absolute;
-  top: 50%;
 
   width: 46px;
   height: 46px;
 
   background-color: $color-white-smoke;
-  transform: translateY(-50%);
 
   &--radio {
     border-radius: 50%;
