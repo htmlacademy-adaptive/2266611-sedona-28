@@ -3,9 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Узнайте о лучших местах для проживания, питания и отдыха в прекрасном курортном городке в центре Аризоны.">
+    <meta name="description" content="Узнайте о лучших местах для проживания, питания и отдыха в курортном городке в центре Аризоны.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
@@ -15,15 +17,15 @@
   <body class="page__body">
     <div class="page__wrapper">
       <header class="page-header no-js">
-        <button class="page-header__toggle burger" type="button">
+        <button class="page-header__toggle" type="button">
           <span class="visually-hidden">Открыть/закрыть меню.</span>
-          <span class="burger__line burger__line--top"></span>
-          <span class="burger__line burger__line--mid"></span>
-          <span class="burger__line burger__line--low"></span>
+          <span class="page-header__toggle-line page-header__toggle-line--top"></span>
+          <span class="page-header__toggle-line page-header__toggle-line--mid"></span>
+          <span class="page-header__toggle-line page-header__toggle-line--low"></span>
         </button>
         <nav class="page-header__nav">
           <a class="page-header__logo" href="#" aria-current="page" tabindex="-1">
-            <img class="page-header__logo-image" src="img/content/logo-image.svg" width="185" height="96" alt="Логотип Седоны.">
+            <img class="page-header__logo-image" src="img/content/logo-image.svg" width="185" height="96" aria-label="Переход на главную страницу." alt="Логотип Седоны.">
           </a>
           <ul class="page-header__list">
             <li class="page-header__item">
@@ -46,7 +48,7 @@
         <!-- Заглавный блок -->
         <section class="intro">
           <h2 class="visually-hidden">Добро пожаловать в Седону.</h2>
-          <img class="intro__slogan" src="img/content/intro-slogan.svg" width="282" height="214" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
+          <img class="intro__slogan" src="img/content/intro-slogan.svg" width="282" height="214" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks.">
         </section>
         <!-- Блок преимуществ -->
         <section class="advantages">
@@ -61,12 +63,12 @@
               <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </figcaption>
             <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/photo-city-desktop.webp 1x, img/content/photo-city-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/content/photo-city-tablet.webp 1x, img/content/photo-city-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/content/photo-city.webp 1x, img/content/photo-city@2x.webp 2x">
-              <source media="(min-width: 1200px)" srcset="img/content/photo-city-desktop.jpg 1x, img/content/photo-city-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/content/photo-city-tablet.jpg 1x, img/content/photo-city-tablet@2x.jpg 2x">
-              <img class="advantages__image" src="img/content/photo-city.jpg" srcset="img/content/photo-city@2x.jpg 2x" width="320" height="260" alt="Ресторан под открытым небом с видом на знаменитые красные скалы Седоны.">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/photo-city-desktop.webp 1x, img/content/photo-city-desktop@2x.webp 2x" width="800" height="256">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/content/photo-city-tablet.webp 1x, img/content/photo-city-tablet@2x.webp 2x" width="512" height="256">
+              <source type="image/webp" srcset="img/content/photo-city-mobile.webp 1x, img/content/photo-city-mobile@2x.webp 2x" width="320" height="260">
+              <source media="(min-width: 1200px)" srcset="img/content/photo-city-desktop.jpg 1x, img/content/photo-city-desktop@2x.jpg 2x" width="800" height="256">
+              <source media="(min-width: 768px)" srcset="img/content/photo-city-tablet.jpg 1x, img/content/photo-city-tablet@2x.jpg 2x" width="512" height="256">
+              <img class="advantages__image" src="img/content/photo-city-mobile.jpg" srcset="img/content/photo-city-mobile@2x.jpg 2x" width="320" height="260" alt="Ресторан под открытым небом с видом на знаменитые красные скалы Седоны.">
             </picture>
           </figure>
           <ul class="advantages__services-list">
@@ -80,7 +82,7 @@
             </li>
             <li class="advantages__services-item advantages__services-item--souvenirs">
               <h3 class="advantages__subtitle">Сувениры</h3>
-              <p class="advantages__description">Не только китайского,<br> но и местного производства!</p>
+              <p class="advantages__description">Не только китайского,<br> &nbsp;но и местного производства!</p>
             </li>
           </ul>
           <figure class="advantages__depiction advantages__depiction--columns">
@@ -90,12 +92,12 @@
               <p class="advantages__description">Да, по нему можно пройти! Если&nbsp;вы осмелитесь, конечно</p>
             </figcaption>
             <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/photo-bridge-desktop.webp 1x, img/content/photo-bridge-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/content/photo-bridge-tablet.webp 1x, img/content/photo-bridge-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/content/photo-bridge.webp 1x, img/content/photo-bridge@2x.webp 2x">
-              <source media="(min-width: 1200px)" srcset="img/content/photo-bridge-desktop.jpg 1x, img/content/photo-bridge-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/content/photo-bridge-tablet.jpg 1x, img/content/photo-bridge-tablet@2x.jpg 2x">
-              <img class="advantages__image" src="img/content/photo-bridge.jpg" srcset="img/content/photo-bridge@2x.jpg 2x" width="320" height="260" alt="Мост дьявола.">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/photo-bridge-desktop.webp 1x, img/content/photo-bridge-desktop@2x.webp 2x" width="800" height="256">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/content/photo-bridge-tablet.webp 1x, img/content/photo-bridge-tablet@2x.webp 2x" width="512" height="256">
+              <source type="image/webp" srcset="img/content/photo-bridge-mobile.webp 1x, img/content/photo-bridge-mobile@2x.webp 2x" width="320" height="260">
+              <source media="(min-width: 1200px)" srcset="img/content/photo-bridge-desktop.jpg 1x, img/content/photo-bridge-desktop@2x.jpg 2x" width="800" height="256">
+              <source media="(min-width: 768px)" srcset="img/content/photo-bridge-tablet.jpg 1x, img/content/photo-bridge-tablet@2x.jpg 2x" width="512" height="256">
+              <img class="advantages__image" src="img/content/photo-bridge-mobile.jpg" srcset="img/content/photo-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Мост дьявола.">
             </picture>
           </figure>
           <ul class="advantages__features-list">
@@ -128,11 +130,11 @@
         <section class="map">
           <h2 class="visually-hidden">Седона на интерактивной карте.</h2>
           <picture>
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/map-desktop.webp 1x, img/content/map-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/content/map-tablet.webp 1x, img/content/map-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/content/map-mobile.webp 1x, img/content/map-mobile@2x.webp 2x">
-            <source media="(min-width: 1200px)" srcset="img/content/map-desktop.jpg 1x, img/content/map-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/content/map-tablet.jpg 1x, img/content/map-tablet@2x.jpg 2x">
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/map-desktop.webp 1x, img/content/map-desktop@2x.webp 2x" width="1200" height="350">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/content/map-tablet.webp 1x, img/content/map-tablet@2x.webp 2x" width="768" height="350">
+            <source type="image/webp" srcset="img/content/map-mobile.webp 1x, img/content/map-mobile@2x.webp 2x" width="320" height="350">
+            <source media="(min-width: 1200px)" srcset="img/content/map-desktop.jpg 1x, img/content/map-desktop@2x.jpg 2x" width="1200" height="350">
+            <source media="(min-width: 768px)" srcset="img/content/map-tablet.jpg 1x, img/content/map-tablet@2x.jpg 2x" width="768" height="350">
             <img class="map__image" src="img/content/map-mobile.jpg" srcset="img/content/map-mobile@2x.jpg 2x" width="320" height="350" alt="Карта расположения Седоны.">
           </picture>
           <div class="map__interactive" id="map"></div>
@@ -159,15 +161,15 @@
         </ul>
         <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="nofollow noopener">
           <span class="page-footer__copyright-text">Разработано</span>
-          <svg class="page-footer__copyright-icon" width="27" height="34" aria-hidden="true" focusable="false">
+          <svg class="page-footer__copyright-icon" width="28" height="35" aria-hidden="true" focusable="false">
             <use href="img/sprite.svg#htmlacademy"></use>
           </svg>
           <span class="visually-hidden">HTML Academy.</span>
         </a>
       </footer>
     </div>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&onload=init" async></script>
     <script src="js/burger-menu.min.js"></script>
     <script src="js/map.min.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&onload=init" async></script>
   </body>
 </html>

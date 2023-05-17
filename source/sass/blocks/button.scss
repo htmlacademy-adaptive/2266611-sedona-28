@@ -1,6 +1,6 @@
 .button {
   display: block;
-  padding: 16px 30px 16px;
+  padding: 16px 30px 16px 30px;
 
   font-weight: 700;
   font-size: 21px;
@@ -19,7 +19,7 @@
   }
 
   &:active {
-    color: rgb($color-white, 0.3);
+    color: rgba($color-white, 0.3);
 
     background-color: $color-shakespeare-darken;
   }
